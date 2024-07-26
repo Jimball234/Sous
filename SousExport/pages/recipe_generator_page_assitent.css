@@ -1,0 +1,275 @@
+.recipe-generator-page-assitent .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.recipe-generator-page-assitent .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-page-assitent .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #5C913B;
+}
+.recipe-generator-page-assitent .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-page-assitent .container-6 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.recipe-generator-page-assitent .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .icon-1 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.recipe-generator-page-assitent .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .container-1 {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 79px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .recipe-for-spaghetti-and-meatballs {
+  margin: 0 0 28px 101.9px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.2px;
+  line-height: 0.4;
+  color: #000000;
+}
+.recipe-for-spaghetti-and-meatballs {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 1.333;
+}
+.recipe-generator-page-assitent .rectangle-13 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: absolute;
+  left: 44px;
+  bottom: 126px;
+  width: 554px;
+  height: 135px;
+}
+.recipe-generator-page-assitent .icon-4 {
+  width: 29.2px;
+  height: 11.5px;
+}
+.recipe-generator-page-assitent .arrow-drop-up {
+  margin: 0 38px 22.9px 0;
+  display: flex;
+  align-self: center;
+  width: 70px;
+  height: 55px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .you-what-if-idont-have-parmesan-cheese {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1;
+  color: #000000;
+}
+.you-what-if-idont-have-parmesan-cheese-sub2 {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1.333;
+  color: #757575;
+}
+.recipe-generator-page-assitent .container-4 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 31px;
+  align-self: flex-end;
+  padding: 20px 30px 15px 30px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .ai-you-can-substitute-with-cheddar-cheese-or-serve-without-cheese {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin: 0 53px 35px 53px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1;
+  color: #000000;
+}
+.ai-you-can-substitute-with-cheddar-cheese-or-serve-without-cheese-sub2 {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1.333;
+  color: #757575;
+}
+.recipe-generator-page-assitent .icon-2 {
+  width: 28px;
+  height: 44px;
+}
+.recipe-generator-page-assitent .mic {
+  margin: 20px 30px 19px 0;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .type-your-questions-here {
+  margin: 1.5px 8px 3.5px 0;
+  display: inline-block;
+  width: 279px;
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #000000;
+}
+.recipe-generator-page-assitent .icon-3 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-page-assitent .navigate-next {
+  display: flex;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .container-3 {
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 31.5px 24.2px 30.5px 35px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .container-2 {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 850px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .container-5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .container {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin: 0 0 23px 21px;
+  padding: 28.6px 54px 23px 16px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent .button-1 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #F5F5F5;
+}
+.recipe-generator-page-assitent .button {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: #2C2C2C;
+  margin-left: 20px;
+  display: flex;
+  padding: 11px 11.5px 11px 11px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-assitent {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 23px;
+  width: 1247px;
+  box-sizing: border-box;
+}

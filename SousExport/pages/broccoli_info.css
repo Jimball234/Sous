@@ -1,0 +1,377 @@
+.broccoli-info .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.broccoli-info .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.broccoli-info .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.broccoli-info .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.broccoli-info .container-2 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.broccoli-info .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.broccoli-info .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.broccoli-info .icon-1 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.broccoli-info .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.broccoli-info .container-7 {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.broccoli-info .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.broccoli-info .button-3 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #F5F5F5;
+}
+.broccoli-info .button-1 {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: rgba(59, 87, 231, 0.85);
+  display: flex;
+  padding: 11px 18.9px 11px 18px;
+  box-sizing: border-box;
+}
+.broccoli-info .update {
+  margin-top: 20px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.2px;
+  line-height: 0.4;
+  color: #000000;
+}
+.broccoli-info .container-3 {
+  margin: 0 45px 45px 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 637.6px;
+  box-sizing: border-box;
+}
+.broccoli-info .name-of-product {
+  border: 1px solid #000000;
+  margin: 10px 8px 13px 0;
+  display: inline-block;
+  width: 182px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1;
+  color: #000000;
+}
+.broccoli-info .broccoli {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  line-height: 1;
+  color: #000000;
+}
+.broccoli-info .container-1 {
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  position: relative;
+  padding: 9px 30px 10px 30px;
+  width: 319px;
+  box-sizing: border-box;
+}
+.broccoli-info .container-5 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 28px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 37px 24px 24px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.broccoli-info .count {
+  border: 1px solid #000000;
+  margin: 6px 9px 16px 0;
+  display: inline-block;
+  width: 152px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #000000;
+}
+.broccoli-info .value {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #1E1E1E;
+}
+.broccoli-info .select {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  padding: 11.5px 15.5px;
+  box-sizing: border-box;
+}
+.broccoli-info .select-field {
+  width: 339px;
+  box-sizing: border-box;
+}
+.broccoli-info .container-8 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 28px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 21px 17px 22px 24px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.broccoli-info .optional {
+  border: 1px solid #757575;
+  margin: 2px 10.3px 0 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #757575;
+}
+.broccoli-info .either-enter-expiration-date-or-we-will-generate-an-estimated-date {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  color: #000000;
+}
+.broccoli-info .container-6 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.broccoli-info .optional-1 {
+  border: 1px solid #757575;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #757575;
+}
+.broccoli-info .either-enter-expiration-date-or-we-will-generate-an-estimated-date-1 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  color: #000000;
+}
+.broccoli-info .container-4 {
+  position: relative;
+  margin: 0 56px 39px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+.broccoli-info .expiration-data {
+  border: 1px solid #000000;
+  margin: 11px 8px 13px 0;
+  display: inline-block;
+  width: 182px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1;
+  color: #000000;
+}
+.broccoli-info .month {
+  margin-right: 13.8px;
+  overflow-wrap: break-word;
+  font-family: var(--body-regular-font-family, 'SF Pro', 'Roboto Condensed');
+  font-weight: var(--body-regular-font-weight, 400);
+  font-size: var(--body-regular-font-size, 17px);
+  letter-spacing: var(--body-regular-letter-spacing, -0.4px);
+  line-height: var(--body-regular-line-height, 1.294);
+  color: #007AFF;
+}
+.broccoli-info .year {
+  overflow-wrap: break-word;
+  font-family: var(--body-regular-font-family, 'SF Pro', 'Roboto Condensed');
+  font-weight: var(--body-regular-font-weight, 400);
+  font-size: var(--body-regular-font-size, 17px);
+  letter-spacing: var(--body-regular-letter-spacing, -0.4px);
+  line-height: var(--body-regular-line-height, 1.294);
+  color: #007AFF;
+}
+.broccoli-info .date {
+  border-radius: 6px;
+  background: rgba(120, 120, 128, 0.12);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  translate: -50% 0;
+  display: flex;
+  flex-direction: row;
+  padding: 6px 15.4px;
+  box-sizing: border-box;
+}
+.broccoli-info .date-and-time-compact-collapsed {
+  border-radius: 6px;
+  position: relative;
+  width: 112px;
+  height: 37px;
+}
+.broccoli-info .input-field {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  position: relative;
+  padding: 3.5px 6px 2.5px 6px;
+  width: 331px;
+  height: 70px;
+  box-sizing: border-box;
+}
+.broccoli-info .container {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 66px 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 21px 29px 22px 28px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.broccoli-info .button-2 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #F5F5F5;
+}
+.broccoli-info .button {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: #2C2C2C;
+  margin-left: 72px;
+  display: flex;
+  padding: 11px 11.5px 11px 11px;
+  box-sizing: border-box;
+}
+.broccoli-info {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 107px;
+  width: 1247px;
+  box-sizing: border-box;
+}

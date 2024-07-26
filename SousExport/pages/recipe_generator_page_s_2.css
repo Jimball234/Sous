@@ -1,0 +1,250 @@
+.recipe-generator-page-s-2 .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.recipe-generator-page-s-2 .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-page-s-2 .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #5C913B;
+}
+.recipe-generator-page-s-2 .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-page-s-2 .container-2 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .icon-1 {
+  width: 41.7px;
+  height: 45px;
+}
+.recipe-generator-page-s-2 .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .icon-2 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.recipe-generator-page-s-2 .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .container-3 {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 79px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .recipe-for-spaghetti-and-meatballs {
+  margin: 0 0 8px 101.9px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.2px;
+  line-height: 0.4;
+  color: #000000;
+}
+.recipe-for-spaghetti-and-meatballs {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 1.333;
+}
+.recipe-generator-page-s-2 .icon {
+  width: 8.8px;
+  height: 16.3px;
+}
+.recipe-generator-page-s-2 .arrow-left {
+  margin: 6.4px 7.5px 7.4px 0;
+  display: flex;
+  width: 42px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .step-2-of-9 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-page-s-2 .container {
+  margin-bottom: 29px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .heat-atablespoon-of-oil-on-apan-over-medium-heat {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 5.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-page-s-2 .container-4 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin: 0 0 93px 12.3px;
+  display: flex;
+  padding: 29px 0 39px 28px;
+  width: 891px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .icon-3 {
+  width: 28px;
+  height: 44px;
+}
+.recipe-generator-page-s-2 .mic {
+  margin: 20px 30px 19px 0;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .type-your-questions-here {
+  margin: 1.5px 8px 3.5px 0;
+  display: inline-block;
+  width: 279px;
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #000000;
+}
+.recipe-generator-page-s-2 .icon-4 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-page-s-2 .navigate-next {
+  display: flex;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .container-6 {
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 31.5px 24.2px 30.5px 35px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .container-5 {
+  margin: 0 27px 0 26.3px;
+  display: flex;
+  flex-direction: row;
+  width: 850px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .container-1 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin: 0 48px 79px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 21px 14px 12.8px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 .button-1 {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: #F5F5F5;
+}
+.recipe-generator-page-s-2 .button {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: #2C2C2C;
+  margin-left: 14px;
+  display: flex;
+  padding: 11px 11.5px 11px 11px;
+  box-sizing: border-box;
+}
+.recipe-generator-page-s-2 {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 48px;
+  width: 1247px;
+  box-sizing: border-box;
+}

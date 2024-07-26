@@ -1,0 +1,344 @@
+.enter-expiration-date-for-fridge-item .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.enter-expiration-date-for-fridge-item .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.enter-expiration-date-for-fridge-item .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.enter-expiration-date-for-fridge-item .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.enter-expiration-date-for-fridge-item .container-3 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.enter-expiration-date-for-fridge-item .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .icon-1 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.enter-expiration-date-for-fridge-item .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .container-1 {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .button-3 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #F5F5F5;
+}
+.enter-expiration-date-for-fridge-item .button-1 {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: rgba(59, 87, 231, 0.85);
+  display: flex;
+  padding: 11px 18.9px 11px 18px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .add-to-virtual-fridge {
+  margin: 10px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.2px;
+  line-height: 0.4;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .container-4 {
+  margin: 0 45px 45px 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 784.6px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .name-of-product {
+  border: 1px solid #000000;
+  margin: 5px 8px 19px 0;
+  display: inline-block;
+  width: 182px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .value-1 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #1E1E1E;
+}
+.enter-expiration-date-for-fridge-item .input-1 {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  padding: 11.5px 15.5px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .input-field-1 {
+  width: 331px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .container-2 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 28px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 25px 18px 24px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .count {
+  border: 1px solid #000000;
+  margin: 9px 9px 13px 0;
+  display: inline-block;
+  width: 152px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .value {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #1E1E1E;
+}
+.enter-expiration-date-for-fridge-item .select {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  padding: 11.5px 15.5px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .select-field {
+  width: 339px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .container {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 28px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px 17px 25px 24px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .optional {
+  border: 1px solid #757575;
+  margin: 2px 10.3px 0 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #757575;
+}
+.enter-expiration-date-for-fridge-item .either-enter-expiration-date-or-we-will-generate-an-estimated-date {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .container-5 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .optional-1 {
+  border: 1px solid #757575;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  line-height: 1.1;
+  color: #757575;
+}
+.enter-expiration-date-for-fridge-item .either-enter-expiration-date-or-we-will-generate-an-estimated-date-1 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 1;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .container-6 {
+  position: relative;
+  margin: 0 56px 39px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .expiration-data {
+  border: 1px solid #000000;
+  margin: 11px 8px 13px 0;
+  display: inline-block;
+  width: 182px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1;
+  color: #000000;
+}
+.enter-expiration-date-for-fridge-item .input {
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  width: 331px;
+  height: 40px;
+}
+.enter-expiration-date-for-fridge-item .input-field {
+  display: flex;
+  width: 331px;
+  height: 70px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .container-7 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #F5F5F5;
+  position: relative;
+  margin: 0 0 66px 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 21px 29px 22px 28px;
+  width: 792px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item .button-2 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #F5F5F5;
+}
+.enter-expiration-date-for-fridge-item .button {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: #2C2C2C;
+  margin-left: 72px;
+  display: flex;
+  padding: 11px 11.5px 11px 11px;
+  box-sizing: border-box;
+}
+.enter-expiration-date-for-fridge-item {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 107px;
+  width: 1247px;
+  box-sizing: border-box;
+}
