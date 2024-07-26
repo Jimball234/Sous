@@ -15,53 +15,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home_page.css" />
+    <style>
+      .text-button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+      }
+      .container-1 {
+        position: relative; /* Make sure the parent container has a relative position */
+      }
+
+      .mask-group {
+        position: absolute; /* Position the mask-group absolutely within its parent */
+        top: 20px; /* Adjust the top position */
+        left: 50px; /* Adjust the left position */
+        /* You can use other properties like right, bottom, transform, etc. to fine-tune the position */
+        /* i want to position this element to the far left of the webpage */
+        left: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="home-page">
       <div class="header">
-        <div class="sous">
-        sous
-        </div>
+        <button class="text-button sous">sous</button>
         <div class="container-3">
-          <span class="generator">
-          generator
-          </span>
-          <span class="recipe">
-          recipe
-          </span>
-          <span class="virtual-pantries">
-          virtual-pantries
-          </span>
+          <button class="text-button generator">generator</button>
+          <button class="text-button recipe">recipe</button>
+          <button class="text-button virtual-pantries">virtual-pantries</button>
         </div>
         <div class="container">
-          <div class="account-circle">
+          <button class="text-button account-circle">
             <img class="icon" src="../assets/vectors/icon_126_x2.svg" />
-          </div>
-          <div class="heart">
+          </button>
+          <button class="text-button heart">
             <img class="icon-1" src="../assets/vectors/icon_19_x2.svg" />
-          </div>
+          </button>
         </div>
       </div>
       <div class="container-1">
         <div class="container-2">
           <p class="welcome-to-sous">
-          <span class="welcome-to-sous-sub-123"></span><span class="welcome-to-sous-sub-0"></span><span class="welcome-to-sous-sub-139"></span><span class="welcome-to-sous-sub-0"></span><span class="welcome-to-sous-sub-136"></span><span></span>
+            <span class="welcome-to-sous-sub-123"></span>
+            <span class="welcome-to-sous-sub-0"></span>
+            <span class="welcome-to-sous-sub-139"></span>
+            <span class="welcome-to-sous-sub-0"></span>
+            <span class="welcome-to-sous-sub-136"></span>
+            <span></span>
           </p>
-          <div class="login">
-          login
-          </div>
-          <div class="your-pantry">
-          | your pantry 
-          </div>
-          <div class="recipe-generator">
-          | recipe generator
-          </div>
+          <button class="text-button login">login</button>
+          <button class="text-button your-pantry">| your pantry</button>
+          <button class="text-button recipe-generator">| recipe generator</button>
         </div>
         <div class="mask-group">
-          <div class="iconss-1">
-          </div>
-          <div class="screenshot-20240716-at-851-background-removed-28-pm-1">
-          </div>
+          <button class="text-button iconss-1"></button>
+          <button class="text-button screenshot-20240716-at-851-background-removed-28-pm-1"></button>
         </div>
       </div>
       <span class="simply-input-your-ideas-and-well-generate-apersonalized-recipe-for-you">
