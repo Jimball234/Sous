@@ -1,0 +1,822 @@
+.recipe-generator-options .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.recipe-generator-options .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-options .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #5C913B;
+}
+.recipe-generator-options .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.recipe-generator-options .container-3 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.recipe-generator-options .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .icon-1 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.recipe-generator-options .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-19 {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .button-1 {
+  overflow-wrap: break-word;
+  font-family: var(--single-line-body-base-font-family, 'Inter');
+  font-weight: var(--single-line-body-base-font-weight, 400);
+  font-size: var(--single-line-body-base-font-size, 16px);
+  line-height: var(--single-line-body-base-line-height, 1);
+  color: #F5F5F5;
+}
+.recipe-generator-options .button {
+  border-radius: 8px;
+  border: 1px solid #2C2C2C;
+  background: #3B57E7;
+  margin-bottom: 6px;
+  display: flex;
+  padding: 11px 11.1px 11px 11px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .select {
+  margin-top: 26px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: -0.2px;
+  line-height: 0.4;
+  color: #000000;
+}
+.recipe-generator-options .container-22 {
+  margin: 0 34px 64px 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 669.9px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .lasagna {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-right: 12.5px;
+  width: 159px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 4.3px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins-5 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin: 2px 0 5px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-14 {
+  margin: 0 8.2px 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 281.8px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .adish-involving-layering-sheets-of-pasta-together-with-meat-and-bechamel {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 1.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-2 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next {
+  margin-left: 38.9px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-4 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-1 {
+  margin-right: 1.7px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .icon-10 {
+  width: 16px;
+  height: 16px;
+}
+.recipe-generator-options .person-1 {
+  margin: 1px 0 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-5 {
+  margin: 0 6px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-21 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 17px 18px 1px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .macaroni-cheese {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-right: 18px;
+  width: 159px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin: 2px 0 16px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-13 {
+  margin: 0 8.9px 9px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 281.1px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .adish-involving-layering-sheets-of-pasta-together-with-meat-and-bechamel-1 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 1.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-6 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next-4 {
+  margin-left: 22.9px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-5 {
+  margin-left: 238.3px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .container-27 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 18px 7px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .cacio-epepe {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin: 0 9.5px 1px 0;
+  display: inline-block;
+  width: 159px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 3.2px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins-1 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin-top: 2px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-6 {
+  margin: 0 8.6px 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 281.4px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .asimple-yet-elegant-dish-with-eggs-cheese-and-pasta {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 19.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-7 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next-5 {
+  margin-left: 57.4px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-11 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container {
+  margin-right: 1.7px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .icon-9 {
+  width: 16px;
+  height: 16px;
+}
+.recipe-generator-options .person {
+  margin: 1px 0 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-12 {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-24 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 17px 18px 5px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-25 {
+  margin: 0 44px 42px 55px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 76px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .tortilla-pizza {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-right: 10px;
+  width: 181px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 3.4px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins-2 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin-top: 2px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-1 {
+  margin: 0 11.1px 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 278.9px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .aeasy-version-of-pizza-replacing-the-dough-with-tortilla {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 19.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-3 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next-1 {
+  margin-left: 46.3px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-15 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-2 {
+  margin-right: 1.7px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .icon-11 {
+  width: 16px;
+  height: 16px;
+}
+.recipe-generator-options .person-2 {
+  margin: 1px 0 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-20 {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-2 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin: 6px 0 3px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 17px 18px 9px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .spaghetti-meatballs {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-right: 18px;
+  width: 159px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins-3 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin: 2px 0 16px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-10 {
+  margin: 0 7.9px 9px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 282.1px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .acomfort-pasta-dish-with-homemade-meatballs-and-pasta-sauce {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 1.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-4 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next-2 {
+  margin-left: 46.3px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-23 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-3 {
+  margin-right: 1.7px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .icon-12 {
+  width: 16px;
+  height: 16px;
+}
+.recipe-generator-options .person-3 {
+  margin: 1px 0 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-7 {
+  margin: 0 4px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-8 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 17px 18px 8px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .carbonara {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin: 0 9.5px 1px 0;
+  display: inline-block;
+  width: 159px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 3.2px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .mins-4 {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #757575;
+  margin-top: 2px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #757575;
+}
+.recipe-generator-options .container-18 {
+  margin: 0 8.6px 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 281.4px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .asimple-yet-elegant-dish-with-eggs-pasta-and-pancetta {
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  margin-bottom: 16.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3.1px;
+  line-height: 1;
+  color: #000000;
+}
+.recipe-generator-options .icon-5 {
+  width: 14.8px;
+  height: 21px;
+}
+.recipe-generator-options .navigate-next-3 {
+  margin-left: 57.5px;
+  display: flex;
+  align-self: center;
+  width: 48px;
+  height: 42px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-17 {
+  border-radius: 30px;
+  background: #F0F9DE;
+  position: relative;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 13.5px 22px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-4 {
+  margin-right: 1.7px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+.recipe-generator-options .icon-13 {
+  width: 16px;
+  height: 16px;
+}
+.recipe-generator-options .person-4 {
+  margin: 1px 0 3px 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-16 {
+  margin: 0 6px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-26 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background: #CCE9AE;
+  position: relative;
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 17px 18px 9px 24px;
+  width: 332px;
+  box-sizing: border-box;
+}
+.recipe-generator-options .container-9 {
+  margin: 0 44px 14.4px 55px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 76px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.recipe-generator-options .icon-8 {
+  width: 32.9px;
+  height: 10.2px;
+}
+.recipe-generator-options .arrow-drop-down {
+  margin-left: 32px;
+  display: flex;
+  align-self: center;
+  width: 79px;
+  height: 49px;
+  box-sizing: border-box;
+}
+.recipe-generator-options {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34.4px;
+  width: 1247px;
+  box-sizing: border-box;
+}

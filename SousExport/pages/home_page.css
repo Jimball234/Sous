@@ -1,0 +1,213 @@
+.home-page .sous {
+  margin: 6.5px 10px 18.5px 0;
+  display: inline-block;
+  width: 228px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: -0.2px;
+  line-height: 0.25;
+  color: #FFFFFF;
+}
+.home-page .generator {
+  margin-right: 10px;
+  width: 163px;
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.home-page .recipe {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.home-page .virtual-pantries {
+  overflow-wrap: break-word;
+  font-family: 'JetBrains Mono';
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration-line: underline;
+  letter-spacing: -0.2px;
+  line-height: 0.8;
+  color: #FFFFFF;
+}
+.home-page .container-3 {
+  margin: 13.5px 0 11.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 535.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.home-page .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.home-page .account-circle {
+  margin-right: 34.7px;
+  display: flex;
+  width: 50px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.home-page .icon-1 {
+  width: 34.8px;
+  height: 29.6px;
+}
+.home-page .heart {
+  margin: 10.4px 0 5px 0;
+  display: flex;
+  width: 40px;
+  height: 39px;
+  box-sizing: border-box;
+}
+.home-page .container {
+  display: flex;
+  flex-direction: row;
+  width: 111.3px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.home-page .header {
+  background: rgba(50, 185, 2, 0.63);
+  position: relative;
+  margin-bottom: 182px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32.5px 56.6px 30.5px 10px;
+  width: 1247px;
+  box-sizing: border-box;
+}
+.welcome-to-sous-sub136 {
+  font-family: 'jsMath-cmbx10';
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -0.2px;
+  line-height: 1.333;
+}
+.home-page .welcome-to-sous {
+  margin-right: 17.6px;
+  overflow-wrap: break-word;
+  font-family: 'jsMath-cmbx10';
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -0.2px;
+  line-height: 0.313;
+  color: #000000;
+}
+.welcome-to-sous-sub123 {
+  font-family: 'jsMath-cmbx10';
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -10px;
+  line-height: 1.333;
+}
+.welcome-to-sous-sub139 {
+  font-family: 'jsMath-cmbx10';
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 3px;
+  line-height: 1.333;
+}
+.home-page .login {
+  margin: 131px 29.3px 314px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 0.5;
+  color: #000000;
+}
+.home-page .your-pantry {
+  margin: 129px 16.8px 316px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 0.5;
+  color: #000000;
+}
+.home-page .recipe-generator {
+  margin: 129px 0 316px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 0.5;
+  color: #000000;
+}
+.home-page .container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.home-page .iconss-1 {
+  background: url('../assets/images/iconss_1.png') 50% / cover no-repeat;
+  position: relative;
+  width: 48px;
+  height: 53px;
+}
+.home-page .screenshot-20240716-at-851-background-removed-28-pm-1 {
+  background: url('../assets/images/screenshot_20240716_at_851_background_removed_28_pm_1.png') 50% / cover no-repeat;
+  transform: rotate(-13.903deg);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 41px;
+  height: 39px;
+}
+.home-page .mask-group {
+  position: absolute;
+  left: 179px;
+  top: 103px;
+  display: flex;
+  padding-left: 5px;
+  width: 66px;
+  height: 98px;
+  box-sizing: border-box;
+}
+.home-page .container-1 {
+  position: relative;
+  margin: 0 69.7px 28px 115px;
+  display: flex;
+  box-sizing: border-box;
+}
+.home-page .simply-input-your-ideas-and-well-generate-apersonalized-recipe-for-you {
+  margin: 0 83.2px 0 73px;
+  overflow-wrap: break-word;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  line-height: 0.625;
+  color: #000000;
+}
+.home-page {
+  background: #FFFAE7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 38px;
+  width: 1247px;
+  box-sizing: border-box;
+}

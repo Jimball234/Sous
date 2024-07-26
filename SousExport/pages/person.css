@@ -1,0 +1,8 @@
+.person .icon {
+  width: 16px;
+  height: 16px;
+}
+.person {
+  display: flex;
+  box-sizing: border-box;
+}

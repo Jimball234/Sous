@@ -1,0 +1,16 @@
+.property-1-variant-2 .icon {
+  width: 28px;
+  height: 44px;
+}
+.property-1-variant-2 .mic {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.property-1-variant-2 {
+  border-radius: 40px;
+  background: #00FF38;
+  padding: 6px 19px 11px 19px;
+  box-sizing: border-box;
+}

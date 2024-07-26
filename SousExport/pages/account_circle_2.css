@@ -1,0 +1,9 @@
+.account-circle-2 .icon {
+  width: 41.7px;
+  height: 45px;
+}
+.account-circle {
+  display: flex;
+  padding: 4.5px 4.2px;
+  box-sizing: border-box;
+}
