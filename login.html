@@ -12,13 +12,68 @@
         width="60"
     height="60" style="float: right; padding: 10px">
   </header>
-    <div style="font-family: Arial; display: flex;justify-content: center;align-items: center;text-align: center;">
-        <strong style="font-size: 30px; color: #333333">LOGIN</strong>
+    <div style="font-family: Arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        min-height: 50vh">
+
+        <div style="font-size: 45px; color: #333333">Log in</div>
+
+        <br>
+
+        <form>
+            <label class="word-field" for="username"> Email
+                <br>
+                <input class="soft-input-field" type="text" id="username" required>
+            </label>
+
+            <label class="word-field" for="password"> Password
+                <br>
+                <input class="soft-input-field" type="text" id="password" required>
+            </label>
+
+        </form>
+
+        <button id="sign-in">Sign in</button>
+        <br>
+        <a href="" style="color: #007AFF"> Forgot password?</a>
     </div>
 
 </body>
 </html>
 
 <style>
+    #sign-in {
+        margin-top: 20px;
+        background-color: #5C913B;
+        border: 0.0px solid;
+        border-radius: 10px;
+        padding: 10px;
+        width: 17%;
+        color: #F5F5F5;
+    }
+
+    #sign-in:hover {
+        cursor: pointer;
+    }
+
+    .word-field {
+        display: block;
+        margin-bottom: 30px; /* Space between label and input */
+        font-size: 100%; /* Make label smaller */
+        margin-right: 100%; /* Position label slightly to the left */
+        color: #1E1E1E;
+    }
+
+    .soft-input-field {
+        border-radius: 5px;
+        border: 0.5px solid #D9D9D9;
+        outline: none;
+        height: 25px;
+        width: 224px;
+    }
 
 </style>
