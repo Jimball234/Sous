@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login Page</title>
 </head>
 <body style="background-color: #FFFAE7">
   <header>
-    <img src="SousExport/assets/images/header-word-login-upscaled.png" alt="SOUS", width="195"
+    <img id="SOUS" src="SousExport/assets/images/header-word-login-upscaled.png" alt="SOUS", width="195"
          height="65"/>
     <img src="SousExport/assets/images/upscaled-login.png" alt="user-login"
         width="60"
@@ -45,7 +45,16 @@
 </body>
 </html>
 
+<script>
+    document.getElementById("SOUS").addEventListener("click", ()=> {
+        window.location.href = "home.html";
+    });
+</script>
+
 <style>
+    #SOUS:hover {
+        cursor: pointer;
+    }
     #sign-in {
         margin-top: 20px;
         background-color: #5C913B;
