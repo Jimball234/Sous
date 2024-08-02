@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e3;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    margin: 0 auto;
+}
+
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+
+
+}
+
+.taskbar {
+    background-color: #32B902;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.taskbar .left {
+    display: flex;
+}
+
+.taskbar .right {
+    display: flex;
+}
+
+.taskbar button {
+    background-color: #32B902;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.taskbar button:hover {
+    background-color: #40893A;
+}
+
+img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 40px;
+  }
+
+.user-actions a {
+    margin-left: 10px;
+}
+
+.return-button {
+    background-color: #4d89f5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #CCE9AE;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.inner-card {
+    background-color: #F0F9DE;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.time {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.servings {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
