@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sous</title>
     <link rel="stylesheet" href="six-recipes.css">
+
+    <script src="handlebars.js"></script>
 </head>
 <body >
 
@@ -58,9 +60,11 @@
                     <div style="flex-direction: row">
                         <label for="input-name">Item name</label><input id="input-name">
                         <br>
+                        <div><label for="input-exp">Expiration Date ~</label><input id="input-exp"></div>
+                        <br>
                         <div style="display: flex;
                             align-items: center;">
-                            <div><label for="input-exp">Expiration Date ~</label><input id="input-exp"></div>
+                            <div><label for="input-count">Count</label><input id="input-count"></div>
                             <button id = "modal-add-button"> add</button>
 
                         </div>
@@ -134,16 +138,19 @@
     document.getElementById("modal-add-button").addEventListener("click", () => {
         const item_name = document.getElementById("input-name").value;
         const item_exp = document.getElementById("input-exp").value;
+        const item_count = document.getElementById("input-count").value;
 
         const newDiv = document.createElement("div");
         const box = document.getElementById("brown-square");
         newDiv.classList.add("item");
-        newDiv.innerText += item_name + " \n" + "exp:" + item_exp;
+        newDiv.id = item_name;
+
+        newDiv.innerText += item_name + " \n" + "exp:" + item_exp + " \ncount: " + item_count;
         box.appendChild(newDiv);
         if(localStorage.getItem("item-storage") === null) {
             localStorage.setItem("item-storage", item_name);
         } else {
-            localStorage.setItem("item-storage", localStorage.getItem("item-storage") + item_name);
+            localStorage.setItem("item-storage", localStorage.getItem("item-storage") + " " + item_name);
         }
     });
 
@@ -302,4 +309,12 @@
         width: 224px;
     }
 
+    #input-count{
+        display: block;
+        border-radius: 5px;
+        border: 0.5px solid #D9D9D9;
+        outline: none;
+        height: 25px;
+        width: 224px;
+    }
 </style>
