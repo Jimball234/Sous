@@ -37,24 +37,35 @@
     display: flex;
     justify-content: center;
     align-items: center;" >
-        <div id="middle">
-            Virtual Pantry
-            <div style="margin-top: 50px;" id="brown-square"></div>
+        <div id="middle" style="margin-top: 20px">
+            <strong>Virtual Pantry</strong>
+            <div style="margin-top: 20px;" id="brown-square"></div>
         </div>
     </div>
 
     <div>
-        <button style="float: left; margin-top: 10px; margin-left: 250px" id = "to-fridge"> To Fridge</button>
+        <button style="float: left; margin-top: 10px; margin-left: 250px" id = "to-fridge"> <strong><</strong> To Fridge</button>
         <button data-modal-target="#modal" style="float: right;margin-top: 10px;margin-right: 250px" id = "add-item"> Add an item to pantry</button>
     </div>
 
 
     <div class="modal" id="modal">
         <div class="modal-header">
-            <div class="title"> Add Item to Pantry</div>
+            <div class="title"> Add Item</div>
             <button data-close-button class="close-button">&times</button>
             </div>
-                <div class="modal-body">
+                <div class="modal-body" >
+                    <div style="flex-direction: row">
+                        <label for="input-name">Item name</label><input id="input-name">
+                        <br>
+                        <div style="display: flex;
+                            align-items: center;">
+                            <div><label for="input-exp">Expiration Date ~</label><input id="input-exp"></div>
+                            <button id = "modal-add-button"> add</button>
+
+                        </div>
+                        <p style="display:table-footer-group; font-size: 7px">*items may appear under this pop up</p>
+                    </div>
 
                 </div>
     </div>
@@ -79,6 +90,16 @@
             openModal(modal);
         })
     })
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            // Your code to handle the Escape key press goes here
+            const modals = document.querySelectorAll('.modal.active')
+            modals.forEach(modal => {
+                closeModal(modal);
+            });
+        }
+    });
 
     closeModalButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -110,14 +131,56 @@
         overlay.classList.remove('active');
     }
 
-    document.getElementById("add-item").addEventListener("click", () => {
+    document.getElementById("modal-add-button").addEventListener("click", () => {
+        const item_name = document.getElementById("input-name").value;
+        const item_exp = document.getElementById("input-exp").value;
 
+        const newDiv = document.createElement("div");
+        const box = document.getElementById("brown-square");
+        newDiv.classList.add("item");
+        newDiv.innerText += item_name + " \n" + "exp:" + item_exp;
+        box.appendChild(newDiv);
+        if(localStorage.getItem("item-storage") === null) {
+            localStorage.setItem("item-storage", item_name);
+        } else {
+            localStorage.setItem("item-storage", localStorage.getItem("item-storage") + item_name);
+        }
     });
 
 
 </script>
 
 <style>
+    .item {
+        border-radius: 5px;
+        text-align: center;
+        height: auto;
+        width:auto;
+        display:inline-block;
+
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: rgba(50, 185, 2, .25);
+        font-size: 19px;
+
+        flex-shrink: 0; /* Prevent shrinking */
+        flex-grow: 0; /* Prevent growing */
+    }
+    #modal-add-button:hover {
+        cursor: pointer;
+    }
+
+    #modal-add-button {
+        color: #FFFFFF;
+        background-color: #4a7a5e;
+        padding: 9px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 10px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
     .modal {
         position: fixed;
         top: 50%;
@@ -125,7 +188,7 @@
         transform: translate(-50%, -50%) scale(0);
         transition: 200ms ease-in-out;
         border-radius: 10px;
-        background-color: #6eab59;
+        background-color: #6A9A61FF;
         color: #fdfcf8;
         z-index: 10;
         width: 40%;
@@ -197,16 +260,18 @@
 
     #add-item {
         color: #FFFFFF;
-        background-color: #000000;
+        background-color: #6a9a61;
         padding: 9px;
         border: none;
         border-radius: 10px;
     }
 
     #brown-square {
+        display: table;
+        flex-direction: column; /* Arrange items horizontally */
+        justify-content: flex-start;
         justify-self: center;
-        display: flex;
-        background-color: #98875D;
+        background-color: rgba(152, 135, 93, .45);
         width: 1000px;
         height: 500px;
         border-radius: 30px;
@@ -217,6 +282,24 @@
         font-family: Arial,serif;
         font-size: 200%; /* Make label smaller */
         color: #1E1E1E;
+    }
+
+    #input-name {
+        display: block;
+        border-radius: 5px;
+        border: 0.5px solid #D9D9D9;
+        outline: none;
+        height: 25px;
+        width: 224px;
+    }
+
+    #input-exp {
+        display: block;
+        border-radius: 5px;
+        border: 0.5px solid #D9D9D9;
+        outline: none;
+        height: 25px;
+        width: 224px;
     }
 
 </style>
