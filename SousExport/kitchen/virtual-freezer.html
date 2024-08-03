@@ -40,15 +40,15 @@
     justify-content: center;
     align-items: center;" >
         <div id="middle" style="margin-top: 20px">
-            <strong>Virtual Pantry</strong>
-            <div style="margin-top: 20px;" id="brown-square"></div>
+            <strong>Virtual Freezer</strong>
+            <div style="margin-top: 20px;" id="blue-square"></div>
         </div>
     </div>
 
     <div>
-        <a style="color: black;text-decoration: none" href="virtual-fridge-no-freezer.html"><button style="float: left; margin-top: 10px; margin-left: 250px" id = "to-fridge"> <strong><</strong> To Fridge</button></a>
+        <a style="color: black;text-decoration: none" href="virtual-pantry.html"><button style="float: left; margin-top: 10px; margin-left: 250px" id = "to-fridge"> <strong><</strong> To Pantry</button></a>
         <button data-modal-target="#modal" style="text-align: center; margin-top: 10px; margin-left: 300px;" id = "add-item"> Add an item to pantry</button>
-        <a style="color: black;text-decoration: none" href="virtual-freezer.html"><button style="float: right; margin-top: 10px; margin-right: 250px" id="to-fridge"> To Freezer<strong>></strong></button></a>
+        <a style="color: black;text-decoration: none" href="virtual-fridge-no-freezer.html"><button style="float: right; margin-top: 10px; margin-right: 250px" id="to-fridge"> To Fridge<strong>></strong></button></a>
     </div>
 
 
@@ -176,7 +176,7 @@
     };
 
     window.onload = () => {
-        document.getElementById("brown-square").innerHTML = localStorage.getItem("load-storage");
+        document.getElementById("blue-square").innerHTML = localStorage.getItem("load-storage");
     }
 
     document.getElementById("modal-add-button").addEventListener("click", () => {
@@ -191,7 +191,7 @@
         const item_count = document.getElementById("input-count").value;
         document.getElementById("input-count").value = "";
 
-        const box = document.getElementById("brown-square");
+        const box = document.getElementById("blue-square");
         variables.item_name = item_name;
         variables.item_exp = item_exp;
         variables.item_count = item_count;
@@ -208,10 +208,10 @@
             localStorage.setItem("item-storage", localStorage.getItem("item-storage") + " " + item_name);
         }
 
-        localStorage.setItem("load-storage", document.getElementById("brown-square").innerHTML);
+        localStorage.setItem("load-storage", document.getElementById("blue-square").innerHTML);
     });
 
-    const box = document.getElementById("brown-square");
+    const box = document.getElementById("blue-square");
     box.addEventListener("click", (event) => {
         const target = event.target;
         if (target.classList.contains("remove-button")) { // Assuming a class for the remove button
@@ -219,7 +219,7 @@
             localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace(divy.id, ""));
             localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace("  ", ""));
             divy.remove();
-            localStorage.setItem("load-storage", document.getElementById("brown-square").innerHTML);
+            localStorage.setItem("load-storage", document.getElementById("blue-square").innerHTML);
         }
     });
 
@@ -349,12 +349,12 @@
         border-radius: 10px;
     }
 
-    #brown-square {
+    #blue-square {
         display: table;
         flex-direction: column; /* Arrange items horizontally */
         justify-content: flex-start;
         justify-self: center;
-        background-color: rgba(152, 135, 93, .45);
+        background-color: rgba(115, 155, 2088);
         width: 1000px;
         height: 500px;
         border-radius: 30px;

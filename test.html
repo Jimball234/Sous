@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Containers</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background: rgba(50, 185, 2, 0.63);
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        position: relative;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* This ensures the spacing between items */
+      }
+      .header .left-text,
+      .header .right-text-1,
+      .header .right-text-2,
+      .header .right-text-3 {
+        transform: none; /* Remove the translateY transform */
+        position: static; /* Reset the position */
+        margin: 0 20px; /* Optional: Add some margin for spacing */
+      }
+
+      .header .left-text {
+        margin-left: 20px; /* Ensures some space from the left edge */
+      }
+
+      .header .right-text-1,
+      .header .right-text-2,
+      .header .right-text-3 {
+        margin-right: 20px; /* Ensures some space from the right edge */
+      }
+      .main-body {
+        background: #fffae7;
+        padding: 20px;
+        height: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-text">SOUS</div>
+      <div class="right-text-3">Virtual-Kitchen</div>
+      <div class="right-text-2">Recipe</div>
+      <div class="right-text-1">Login</div>
+    </div>
+    <div class="main-body"></div>
+  </body>
+</html>
