@@ -207,6 +207,7 @@
         if (target.classList.contains("remove-button")) { // Assuming a class for the remove button
             const divy = target.closest(".item"); // Assuming a class for the item container
             localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace(divy.id, ""));
+            localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace("  ", ""));
             divy.remove();
             localStorage.setItem("load-storage", document.getElementById("brown-square").innerHTML);
         }
