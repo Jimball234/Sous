@@ -247,6 +247,12 @@
   const closeModalButtons = document.querySelectorAll('[data-close-button]');
   const overlay = document.getElementById('overlay');
 
+  async function getAIImageURL(item_name) {
+    // const response = await fetch('https://noggin.rea.gent/intelligent-felidae-2993?key=rg_v1_q9tshtbq9qtq2tliootxpmztxxwymcj9inyo_ngk&userin=' + item_name);
+    const response = await fetch('https://noggin.rea.gent/fuzzy-stingray-1660?key=rg_v1_72w3kvcibqjlmmvtlxl7t28i16c3kregpocs_ngk&userinput=' + item_name);
+    return response.url;
+  }
+
   openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
       const modal = document.querySelector(button.dataset.modalTarget)
@@ -294,42 +300,33 @@
     overlay.classList.remove('active');
   }
 
-  const compiledTemplate = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
-          "<button style='cursor: pointer;\n" +
-          "        border: none;\n" +
-          "        outline: none;\n" +
-          "        background: none;\n" +
-          "        font-size: 1.25rem;\n" +
-          "        font-weight: bold;' class=\"remove-button\">&times</button>" +
-          "<strong> item:</strong> {{item_name}} |" +
-          "<strong> count:</strong> {{item_count}} |" +
-          "<strong> exp:</strong>" +
-          "<div>{{item_exp}}" +
-          "</div>");
+  const compiledTemplate = Handlebars.compile(" <div class='item' id='{{item_name}}'> " +
+        "<button style='cursor: pointer; border: none; outline: none; background: none; font-size: 1.25rem; font-weight: bold;' class=\"remove-button\">&times</button>" +
+        "<strong> item:</strong> {{item_name}} |" +
+        "<strong> count:</strong> {{item_count}} |" +
+        "<strong> exp:</strong> {{item_exp}}<br>" +
+        "<img src='{{item_image}}' alt='{{item_name}} image' style='width:100px;height:100px;'>" +
+        "</div>");
 
-  const compiledTemplate2 = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
-          "<button style='cursor: pointer;\n" +
-          "        border: none;\n" +
-          "        outline: none;\n" +
-          "        background: none;\n" +
-          "        font-size: 1.25rem;\n" +
-          "        font-weight: bold;' class=\"remove-button\">&times</button>" +
-          "<strong> item:</strong> {{item_name}} |" +
-          "<strong> count:</strong> <div class='count'>{{item_count}}</div>" +
-          "</div>");
+    const compiledTemplate2 = Handlebars.compile(" <div class='item' id='{{item_name}}'> " +
+        "<button style='cursor: pointer; border: none; outline: none; background: none; font-size: 1.25rem; font-weight: bold;' class=\"remove-button\">&times</button>" +
+        "<strong> item:</strong> {{item_name}} |" +
+        "<strong> count:</strong> {{item_count}}<br>" +
+        "<img src='{{item_image}}' alt='{{item_name}} image' style='width:100px;height:100px;'>" +
+        "</div>");
 
   const variables = {
     item_name: '',
     item_count: '',
     item_exp: '',
-    image: '',
+    item_image: '',
   };
 
   window.onload = () => {
     document.getElementById("grey-square").innerHTML = localStorage.getItem("fridge-storage");
   }
 
-  document.getElementById("modal-add-button").addEventListener("click", () => {
+  document.getElementById("modal-add-button").addEventListener("click", async() => {
     if (document.getElementById("input-name").value === "" || document.getElementById("input-count").value === "") {
       return;
     }
@@ -341,10 +338,13 @@
     const item_count = document.getElementById("input-count").value;
     document.getElementById("input-count").value = "";
 
+    const item_image = await getAIImageURL(item_name);
+
     const box = document.getElementById("grey-square");
     variables.item_name = item_name;
     variables.item_exp = item_exp;
     variables.item_count = item_count;
+    variables.item_image = item_image;
 
     if (item_exp !== "") {
       box.innerHTML += compiledTemplate(variables);
