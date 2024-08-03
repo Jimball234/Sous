@@ -135,7 +135,13 @@
         overlay.classList.remove('active');
     }
 
-    const compiledTemplate = Handlebars.compile(" <div class='item'> " +
+    const compiledTemplate = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
+        "<button style='cursor: pointer;\n" +
+        "        border: none;\n" +
+        "        outline: none;\n" +
+        "        background: none;\n" +
+        "        font-size: 1.25rem;\n" +
+        "        font-weight: bold;' class=\"remove-button\">&times</button>" +
         "<strong> item:</strong> {{item_name}} |" +
         "<strong> count:</strong> {{item_count}} |" +
         "<strong> exp:</strong>{{item_exp}}" +
@@ -150,21 +156,33 @@
 
     document.getElementById("modal-add-button").addEventListener("click", () => {
         const item_name = document.getElementById("input-name").value;
+        document.getElementById("input-name").value = "";
         const item_exp = document.getElementById("input-exp").value;
+        document.getElementById("input-exp").value = "";
         const item_count = document.getElementById("input-count").value;
+        document.getElementById("input-count").value = "";
 
         const box = document.getElementById("brown-square");
         variables.item_name = item_name;
         variables.item_exp = item_exp;
         variables.item_count = item_count;
 
-        box.innerHTML += compiledTemplate(variables)
-
+        box.innerHTML += compiledTemplate(variables);
 
         if(localStorage.getItem("item-storage") === null) {
             localStorage.setItem("item-storage", item_name);
         } else {
             localStorage.setItem("item-storage", localStorage.getItem("item-storage") + " " + item_name);
+        }
+
+    });
+
+    const box = document.getElementById("brown-square");
+    box.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target.classList.contains("remove-button")) { // Assuming a class for the remove button
+            const divy = target.closest(".item"); // Assuming a class for the item container
+            divy.remove();
         }
     });
 
