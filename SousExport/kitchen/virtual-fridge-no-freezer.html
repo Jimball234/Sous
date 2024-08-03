@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fridge</title>
+  <link rel="stylesheet" href="../../six-recipes.css">
+  <script src="handlebars.js"></script>
+</head>
+<body>
+<header>
+  <div class="taskbar">
+    <div class="left">
+      <a href="../../home.html">
+        <h1>SOUS</h1>
+      </a>
+    </div>
+    <div class="right">
+      <a href="virtual-kitchen.html">
+        <button id="virtual-kitchen-button">virtual-kitchen</button>
+      </a>
+      <a href="recipes.html">
+        <button id="recipes-button">recipes</button>
+      </a>
+      <a href="../../generator.html">
+        <button id="generator-button">generator</button>
+      </a>
+      <div class="user-actions">
+        <a href="account.html"><img src="../../user-icon.png" alt="User"></a>
+        <a href="favorites.html"><img src="../../heart-icon.png" alt="Favorites"></a>
+      </div>
+    </div>
+</header>
+
+<div>
+  <div style="justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;" >
+    <div id="middle" style="margin-top: 20px">
+      <strong>Virtual Fridge</strong>
+      <div style="margin-top: 20px;" id="grey-square"></div>
+    </div>
+  </div>
+
+  <div>
+    <a style="color:black;text-decoration: none;" href="virtual-pantry.html"><button style="float: right; margin-top: 10px; margin-right: 250px" id = "to-pantry"> To Pantry <strong> > </strong></button></a>
+    <button data-modal-target="#modal" style="float: left;margin-top: 10px;margin-left: 250px" id = "add-item"> Add an item to fridge</button>
+  </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title"> Add Item</div>
+      <button data-close-button class="close-button">&times</button>
+    </div>
+    <div class="modal-body" >
+      <div style="flex-direction: row">
+        <label for="input-name">Item name</label><input id="input-name">
+        <br>
+        <div><label for="input-exp">Expiration Date (may omit)</label><input id="input-exp"></div>
+        <br>
+        <div style="display: flex;
+                            align-items: center;">
+          <div><label for="input-count">Count</label><input id="input-count"></div>
+          <button id = "modal-add-button"> add</button>
+
+        </div>
+        <p style="display:table-footer-group; font-size: 7px">*items may appear under this pop up</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="overlay"></div>
+
+</body>
+</html>
+
+<style>
+  .item {
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    width:auto;
+    display:inline-block;
+
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: rgba(50, 185, 2, .25);
+    font-size: 19px;
+
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 0; /* Prevent growing */
+  }
+  #modal-add-button:hover {
+    cursor: pointer;
+  }
+
+  #modal-add-button {
+    color: #FFFFFF;
+    background-color: #4a7a5e;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    background-color: #6A9A61FF;
+    color: #fdfcf8;
+    z-index: 10;
+    width: 40%;
+    height: 60%;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .modal-body {
+    padding: 10px 15px;
+  }
+
+  #overlay {
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .5);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #to-pantry:hover {
+    cursor: pointer;
+  }
+
+  #add-item:hover {
+    cursor: pointer;
+  }
+
+  #to-pantry {
+    color: #000000;
+    background-color: rgba(152, 135, 93, .45);
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #add-item {
+    color: #FFFFFF;
+    background-color: #6a9a61;
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #grey-square {
+    display: table;
+    flex-direction: column; /* Arrange items horizontally */
+    justify-content: flex-start;
+    justify-self: center;
+    background-color: rgb(217, 212, 212);
+    width: 1000px;
+    height: 500px;
+    border-radius: 30px;
+  }
+
+  #middle {
+    text-align: center;
+    font-family: Arial,serif;
+    font-size: 200%; /* Make label smaller */
+    color: #1E1E1E;
+  }
+
+  #input-name {
+    display: block;
+    border-radius: 5px;
+    border: 0.5px solid #D9D9D9;
+    outline: none;
+    height: 25px;
+    width: 224px;
+  }
+
+  #input-exp {
+    display: block;
+    border-radius: 5px;
+    border: 0.5px solid #D9D9D9;
+    outline: none;
+    height: 25px;
+    width: 224px;
+  }
+
+  #input-count{
+    display: block;
+    border-radius: 5px;
+    border: 0.5px solid #D9D9D9;
+    outline: none;
+    height: 25px;
+    width: 224px;
+  }
+</style>
+
+<script>
+  const openModalButtons = document.querySelectorAll('[data-modal-target]');
+  const closeModalButtons = document.querySelectorAll('[data-close-button]');
+  const overlay = document.getElementById('overlay');
+
+  openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = document.querySelector(button.dataset.modalTarget)
+      openModal(modal);
+    })
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      // Your code to handle the Escape key press goes here
+      const modals = document.querySelectorAll('.modal.active')
+      modals.forEach(modal => {
+        closeModal(modal);
+      });
+    }
+  });
+
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal')
+      closeModal(modal);
+    })
+  })
+
+  function openModal(modal) {
+    if (modal == null) {
+      return
+    }
+    modal.classList.add('active');
+    overlay.classList.add('active');
+  }
+
+  overlay.addEventListener("click", () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+      closeModal(modal);
+    });
+  });
+
+  function closeModal(modal) {
+    if (modal == null) {
+      return
+    }
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+  }
+
+  const compiledTemplate = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
+          "<button style='cursor: pointer;\n" +
+          "        border: none;\n" +
+          "        outline: none;\n" +
+          "        background: none;\n" +
+          "        font-size: 1.25rem;\n" +
+          "        font-weight: bold;' class=\"remove-button\">&times</button>" +
+          "<strong> item:</strong> {{item_name}} |" +
+          "<strong> count:</strong> {{item_count}} |" +
+          "<strong> exp:</strong>" +
+          "<div>{{item_exp}}" +
+          "</div>");
+
+  const compiledTemplate2 = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
+          "<button style='cursor: pointer;\n" +
+          "        border: none;\n" +
+          "        outline: none;\n" +
+          "        background: none;\n" +
+          "        font-size: 1.25rem;\n" +
+          "        font-weight: bold;' class=\"remove-button\">&times</button>" +
+          "<strong> item:</strong> {{item_name}} |" +
+          "<strong> count:</strong> <div class='count'>{{item_count}}</div>" +
+          "</div>");
+
+  const variables = {
+    item_name: '',
+    item_count: '',
+    item_exp: '',
+    image: '',
+  };
+
+  window.onload = () => {
+    document.getElementById("grey-square").innerHTML = localStorage.getItem("load-storage");
+  }
+
+  document.getElementById("modal-add-button").addEventListener("click", () => {
+    if (document.getElementById("input-name").value === "" || document.getElementById("input-count").value === "") {
+      return;
+    }
+
+    const item_name = document.getElementById("input-name").value;
+    document.getElementById("input-name").value = "";
+    const item_exp = document.getElementById("input-exp").value;
+    document.getElementById("input-exp").value = "";
+    const item_count = document.getElementById("input-count").value;
+    document.getElementById("input-count").value = "";
+
+    const box = document.getElementById("grey-square");
+    variables.item_name = item_name;
+    variables.item_exp = item_exp;
+    variables.item_count = item_count;
+
+    if (item_exp !== "") {
+      box.innerHTML += compiledTemplate(variables);
+    } else {
+      box.innerHTML += compiledTemplate2(variables);
+    }
+
+    if(localStorage.getItem("item-storage") === null) {
+      localStorage.setItem("item-storage", item_name);
+    } else {
+      localStorage.setItem("item-storage", localStorage.getItem("item-storage") + " " + item_name);
+    }
+
+    localStorage.setItem("fridge-storage", document.getElementById("grey-square").innerHTML);
+  });
+
+  const box = document.getElementById("grey-square");
+  box.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target.classList.contains("remove-button")) { // Assuming a class for the remove button
+      const divy = target.closest(".item"); // Assuming a class for the item container
+      localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace(divy.id, ""));
+      localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace("  ", ""));
+      divy.remove();
+      localStorage.setItem("fridge-storage", document.getElementById("grey-square").innerHTML);
+    }
+  });
+</script>
