@@ -60,7 +60,7 @@
                     <div style="flex-direction: row">
                         <label for="input-name">Item name</label><input id="input-name">
                         <br>
-                        <div><label for="input-exp">Expiration Date ~</label><input id="input-exp"></div>
+                        <div><label for="input-exp">Expiration Date (may omit)</label><input id="input-exp"></div>
                         <br>
                         <div style="display: flex;
                             align-items: center;">
@@ -147,6 +147,17 @@
         "<strong> exp:</strong>{{item_exp}}" +
         "</div>");
 
+    const compiledTemplate2 = Handlebars.compile(" <div class='item' id=\'{{item_name}}\'> " +
+        "<button style='cursor: pointer;\n" +
+        "        border: none;\n" +
+        "        outline: none;\n" +
+        "        background: none;\n" +
+        "        font-size: 1.25rem;\n" +
+        "        font-weight: bold;' class=\"remove-button\">&times</button>" +
+        "<strong> item:</strong> {{item_name}} |" +
+        "<strong> count:</strong> {{item_count}}" +
+        "</div>");
+
     const variables = {
         item_name: '',
         item_count: '',
@@ -154,7 +165,15 @@
         image: '',
     };
 
+    window.onload = () => {
+        document.getElementById("brown-square").innerHTML = localStorage.getItem("load-storage");
+    }
+
     document.getElementById("modal-add-button").addEventListener("click", () => {
+        if (document.getElementById("input-name").value === "" || document.getElementById("input-count").value === "") {
+            return;
+        }
+
         const item_name = document.getElementById("input-name").value;
         document.getElementById("input-name").value = "";
         const item_exp = document.getElementById("input-exp").value;
@@ -167,7 +186,11 @@
         variables.item_exp = item_exp;
         variables.item_count = item_count;
 
-        box.innerHTML += compiledTemplate(variables);
+        if (item_exp !== "") {
+            box.innerHTML += compiledTemplate(variables);
+        } else {
+            box.innerHTML += compiledTemplate2(variables);
+        }
 
         if(localStorage.getItem("item-storage") === null) {
             localStorage.setItem("item-storage", item_name);
@@ -175,6 +198,7 @@
             localStorage.setItem("item-storage", localStorage.getItem("item-storage") + " " + item_name);
         }
 
+        localStorage.setItem("load-storage", document.getElementById("brown-square").innerHTML);
     });
 
     const box = document.getElementById("brown-square");
@@ -182,7 +206,9 @@
         const target = event.target;
         if (target.classList.contains("remove-button")) { // Assuming a class for the remove button
             const divy = target.closest(".item"); // Assuming a class for the item container
+            localStorage.setItem("item-storage", localStorage.getItem("item-storage").replace(divy.id, ""));
             divy.remove();
+            localStorage.setItem("load-storage", document.getElementById("brown-square").innerHTML);
         }
     });
 
