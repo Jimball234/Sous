@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sous</title>
-    <link rel="stylesheet" href="six-recipes.css">
+    <link rel="stylesheet" href="../../six-recipes.css">
 
     <script src="handlebars.js"></script>
 </head>
@@ -13,7 +13,7 @@
 <header>
     <div class="taskbar">
         <div class="left">
-            <a href="home.html">
+            <a href="../../home.html">
                 <h1>SOUS</h1>
             </a>
         </div>
@@ -24,12 +24,12 @@
             <a href="recipes.html">
                 <button id="recipes-button">recipes</button>
             </a>
-            <a href="generator.html">
+            <a href="../../generator.html">
                 <button id="generator-button">generator</button>
             </a>
             <div class="user-actions">
-                <a href="account.html"><img src="user-icon.png" alt="User"></a>
-                <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
+                <a href="account.html"><img src="../../user-icon.png" alt="User"></a>
+                <a href="favorites.html"><img src="../../heart-icon.png" alt="Favorites"></a>
             </div>
             </div>
 </header>
@@ -135,18 +135,32 @@
         overlay.classList.remove('active');
     }
 
+    const compiledTemplate = Handlebars.compile(" <div class='item'> " +
+        "<strong> item:</strong> {{item_name}} |" +
+        "<strong> count:</strong> {{item_count}} |" +
+        "<strong> exp:</strong>{{item_exp}}" +
+        "</div>");
+
+    const variables = {
+        item_name: '',
+        item_count: '',
+        item_exp: '',
+        image: '',
+    };
+
     document.getElementById("modal-add-button").addEventListener("click", () => {
         const item_name = document.getElementById("input-name").value;
         const item_exp = document.getElementById("input-exp").value;
         const item_count = document.getElementById("input-count").value;
 
-        const newDiv = document.createElement("div");
         const box = document.getElementById("brown-square");
-        newDiv.classList.add("item");
-        newDiv.id = item_name;
+        variables.item_name = item_name;
+        variables.item_exp = item_exp;
+        variables.item_count = item_count;
 
-        newDiv.innerText += item_name + " \n" + "exp:" + item_exp + " \ncount: " + item_count;
-        box.appendChild(newDiv);
+        box.innerHTML += compiledTemplate(variables)
+
+
         if(localStorage.getItem("item-storage") === null) {
             localStorage.setItem("item-storage", item_name);
         } else {
