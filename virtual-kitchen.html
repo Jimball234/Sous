@@ -40,8 +40,8 @@
     justify-content: center;
     align-items: center;" >
         <div id="middle" style="margin-top: 20px">
-            <strong>Virtual Pantry</strong>
-            <div style="margin-top: 20px;" id="brown-square"></div>
+            <strong>Virtual Freezer</strong>
+            <div style="margin-top: 20px;" id="blue-square"></div>
         </div>
     </div>
 
@@ -149,9 +149,10 @@
         const item_name = document.getElementById("input-name").value;
         const item_exp = document.getElementById("input-exp").value;
         const item_count = document.getElementById("input-count").value;
+        const item_location = document.getElementById("dropdownMenu").value;
 
         const newDiv = document.createElement("div");
-        const box = document.getElementById("brown-square");
+        const box = document.getElementById("blue-square");
         newDiv.classList.add("item");
         newDiv.id = item_name;
 
@@ -290,12 +291,12 @@
         border-radius: 10px;
     }
 
-    #brown-square {
+    #blue-square {
         display: table;
         flex-direction: column; /* Arrange items horizontally */
         justify-content: flex-start;
         justify-self: center;
-        background-color: rgba(152, 135, 93, .45);
+        background-color: rgb(5, 60, 199);
         width: 1000px;
         height: 500px;
         border-radius: 30px;
