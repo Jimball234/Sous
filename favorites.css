@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #a4d294;
+    padding: 20px;
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskbar .left h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.taskbar .right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.user-actions img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4edda;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.favorite-item .recipe-name {
+    font-size: 1.2em;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2605"; /* Unicode star character */
+}
+
+.rating input:checked ~ label {
+    color: #f5b301;
+}
+
+.rating input:hover ~ label {
+    color: #f5b301;
+}
+
+.rating input:hover ~ label ~ label {
+    color: #ccc;
+}
+.checked {
+    color: orange;
+  }

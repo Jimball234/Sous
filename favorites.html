@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sous</title>
+    <link rel="stylesheet" href="six-recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="taskbar">
+                <div class="left">
+                    <a href="home.html">
+                        <h1>SOUS</h1>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="virtual-kitchen.html">
+                        <button id="virtual-kitchen-button">Virtual-Ingredients</button>
+                    </a>
+                    <a href="recipes.html">
+                        <button id="recipes-button">Recipes</button>
+                    </a>
+                    <a href="generator.html">
+                        <button id="generator-button">Generator</button>
+                    </a>
+                    <div class="user-actions">
+                        <a href="account.html"><img src="user-icon.png" alt="User"></a>
+                        <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="body-container">
+        </header>
+        <main>
+            <h2>Favorites</h2>
+            <div class="favorites-list">
+                <div class="favorite-item">
+                    <span class="recipe-name">Spaghetti and Meatballs</span>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <span class="recipe-name">Crispy Crumble Chicken Nuggets</span>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <span class="recipe-name">Mushroom Soup</span>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="favorite-item">
+                    <span class="recipe-name">Al dente Pasta</span>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js">
+        document.querySelectorAll('.rating input').forEach(star => {
+    star.addEventListener('change', () => {
+        console.log(`Rating for ${star.name}: ${star.id.slice(-1)}`);
+    });
+});
+    </script>
+</body>
+</html>
