@@ -1,0 +1,56 @@
+/* body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(50, 185, 2, 0.63);
+    padding: 32.5px 56.6px 30.5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo .sous {
+    font-size: 80px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .text-button {
+    font-size: 25px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.user-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.user-actions .text-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-actions .icon,
+.user-actions .icon-1 {
+    width: 30px;
+    height: 30px;
+} */

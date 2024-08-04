@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sous</title>
+    <link rel="stylesheet" href="add_ingredient.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="taskbar">
+                <div class="left">
+                    <a href="home.html">
+                        <h1>SOUS</h1>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="virtual-kitchen.html">
+                        <button id="virtual-kitchen-button">virtual-kitchen</button>
+                    </a>
+                    <a href="recipes.html">
+                        <button id="recipes-button">recipes</button>
+                    </a>
+                    <a href="generator.html">
+                        <button id="generator-button">generator</button>
+                    </a>
+                    <div class="user-actions">
+                        <a href="account.html"><img src="user-icon.png" alt="User"></a>
+                        <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <button class="return-button">&lt; Return</button>
+            <div class="content-container">
+                <div class="content">
+                    <h1>Add Virtual Ingredient</h1>
+                    <form id="add-product-form">
+                        <label for="product-name">Name of Product:</label>
+                        <input type="text" id="product-name" name="product-name" placeholder="Product">
+                        
+                        <label for="product-count">Count:</label>
+                        <input type="number" id="product-count" name="product-count" placeholder="Number">
+                        
+                        <p class="optional-text">Optional either enter expiration date or we will generate an estimated date</p>
+                        
+                        <label for="expiration-date">Expiration Date:</label>
+                        <input type="date" id="expiration-date" name="expiration-date">
+                        
+                        <button type="submit" class="add-product-button">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
