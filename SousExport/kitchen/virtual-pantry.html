@@ -48,7 +48,7 @@
     <div>
         <a style="color: black;text-decoration: none" href="virtual-fridge-no-freezer.html"><button style="float: left; margin-top: 10px; margin-left: 250px" id = "to-fridge"> <strong><</strong> To Fridge</button></a>
         <button data-modal-target="#modal" style="text-align: center; margin-top: 10px; margin-left: 300px;" id = "add-item"> Add an item to pantry</button>
-        <a style="color: black;text-decoration: none" href="virtual-freezer.html"><button style="float: right; margin-top: 10px; margin-right: 250px" id="to-fridge"> To Freezer<strong>></strong></button></a>
+        <a style="color: black;text-decoration: none" href="virtual-freezer.html"><button style="float: right; margin-top: 10px; margin-right: 250px" id="to-freezer"> To Freezer<strong>></strong></button></a>
     </div>
 
 
@@ -323,14 +323,26 @@
         pointer-events: all;
     }
 
-    #to-fridge:hover {
+    #to-freezer:hover {
         cursor: pointer;
     }
 
     #add-item:hover {
         cursor: pointer;
     }
-    
+
+    #to-freezer {
+        color: #000000;
+        background-color: #B3B3B3;
+        padding: 9px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #to-fridge:hover {
+        cursor: pointer;
+    }
+
     #to-fridge {
         color: #000000;
         background-color: #B3B3B3;
