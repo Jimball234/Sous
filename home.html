@@ -1,36 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="home.css">
-    </head>
-<body>
-  <div class="taskbar">
-    <div class="left">
-        <a href="home.html">
-            <button id="home-button">Home</button>
-        </a>
-    </div>
-    <div class="right">
-        <a href="virtual-kitchen.html">
-            <button id="virtual-kitchen-button">virtual-kitchen</button>
-        </a>
-        <a href="recipes.html">
-            <button id="recipes-button">recipes</button>
-        </a>
-        <a href="generator.html">
-            <button id="generator-button">generator</button>
-        </a>
+    <title>Sous</title>
+    <link rel="stylesheet" href="six-recipes.css">
 
-        <input type="image" src="http://example.com/path/to/image.png"/>
-    </div>
-  </div>
+    <!-- <script src="handlebars.js"></script> -->
+</head>
+<body >
 
-  <div class="content">
-    <h1>Welcome to Sous.</h1>
-    <p></p>
-  </div>
+<header>
+    <div class="taskbar">
+        <div class="left">
+            <a href="../../home.html">
+                <h1>SOUS</h1>
+            </a>
+        </div>
+        <div class="right">
+            <a href="virtual-kitchen.html">
+                <button id="virtual-kitchen-button">virtual-kitchen</button>
+            </a>
+            <a href="recipes.html">
+                <button id="recipes-button">recipes</button>
+            </a>
+            <a href="generator.html">
+                <button id="generator-button">generator</button>
+            </a>
+            <div class="user-actions">
+                <a href="account.html"><img src="user-icon.png" alt="User"></a>
+                <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
+            </div>
+            </div>
+</header>
+<div class="Imgcontainer">
+    <div class="logoimg">
+        <img src="Logo.png" alt="Logo">
+    </div>
+    <div class="text-links">
+        <a href="login.html" class="link">login</a> |
+        <a href="./SousExport/kitchen/virtual-fridge-no-freezer.html" class="link">your kitchen</a> | 
+        <a href="generator.html" class="link">recipe generator</a>
+    </div>
+</div>
 </body>
+
 </html>
+<style>
+    .Imgcontainer{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-top: 100px;
+        height: 100%; /* Adjust as needed */
+        padding-left: 150px;
+        padding-top: 60px;
+    }  
+
+    .logoimg img {
+        height: 400px;
+        width: 400px;
+        object-fit: contain; /* Ensure the image scales correctly */
+    }
+
+    .text-links .link {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        font-size: 36px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        padding-top: 200px;
+        padding-left: 20px;
+    }
+
+    .text-links a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+    }
+</style>
