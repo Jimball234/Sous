@@ -43,7 +43,7 @@
                     <input type="text" placeholder="Type your questions here..." id="query-input">
                     <button id="mic-button"><img src="mic.png" alt="Microphone"></button>
                 </div>
-                <button class="generate-button">Generate</button>
+                <button id="submit-query-button" class="generate-button">Generate</button>
             </main>
         </div>
     </div>
@@ -56,6 +56,9 @@
             servingSize: "1",
             steps: "1. Chop the hot dog into small pieces and heat until warm. 2. In a bowl, mix together lettuce, tomatoes, cucumbers, and onions. 3. Add the warm hot dog pieces. 4. Drizzle mustard as the dressing. 5. Toss well and serve immediately."
         };
+
+        localStorage.setItem('steps', recipeData.steps);
+
 
         // Function to parse and display steps
         function displaySteps(recipe) {
@@ -122,6 +125,12 @@
         } else {
             console.log('Speech recognition not supported in this browser.');
         }
+
+        document.getElementById('submit-query-button').addEventListener('click', () => {
+            const queryInput = document.getElementById('query-input').value;
+            localStorage.setItem("query-input", queryInput)
+            window.location.href = `ai-chat.html?query=${"You: " + encodeURIComponent(queryInput)}`;
+        });
     </script>
 </body>
 </html>
