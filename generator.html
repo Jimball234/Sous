@@ -5,32 +5,156 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recipe Generator</title>
         <link rel="stylesheet" href="generator.css">
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="six-recipes.css">
     </head>
-    <body>
+    <header>
         <div class="taskbar">
             <div class="left">
                 <a href="home.html">
-                    <button id="home-button">Home</button>
+                    <h1>SOUS</h1>
                 </a>
             </div>
             <div class="right">
-                <a href="virtual-kitchen.html">
-                    <button id="virtual-kitchen-button">virtual-kitchen</button>
+                <a href="SousExport/kitchen/virtual-pantry.html">
+                    <button id="virtual-kitchen-button">Virtual-Ingredients</button>
                 </a>
                 <a href="recipes.html">
-                    <button id="recipes-button">recipes</button>
+                    <button id="recipes-button">Recipes</button>
                 </a>
                 <a href="generator.html">
-                    <button id="generator-button">generator</button>
+                    <button id="generator-button">Generator</button>
                 </a>
+                <div class="user-actions">
+                    <a href="account.html"><img src="user-icon.png" alt="User"></a>
+                    <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div>
-            <div id="dietary-restricions" class="option">
-                Known Dietary Restrictions
+    </div>
+    <div class="body-container">
+    </header>
+    <body>
+        <div class="container">
+            <p>Filters:</p>
+            <div id="dietary-restrictions" class="dietary-restrictions">
+                <form id="dietary-form">
+                    <input type="text" id="dietary-input" placeholder="Enter dietary restriction">
+                    <input type="submit" value="Add">
+                </form>
+                <div id="dietary-list" class="dietary-list"></div>
             </div>
+            <div class="cuisine">
+                <p>Cuisine Type</p>
+                <form action="" class="right">
+                    <input type="text" id="cuisine-type" name="cuisine-type">
+                    <input type="submit" value="Submit" style="cursor: pointer">
+                </form>
+            </div>
+            <div class="virtual-pantry">
+                <span>Use only items from virtual pantry?</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="serving-size">
+                <span>Serving Size</span>
+                <select id="serving-size">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="time-limit">
+                <span>Time Limit (minutes)</span>
+                <input type="number" id="time-limit" name="time-limit" min="1">
+            </div>
+            <div class="other-concerns">
+                <span>Other concerns? Looking for something?</span>
+                <textarea id="other-concerns" name="other-concerns" placeholder="Type your concerns here..."></textarea>
+            </div>
+            <a id="button-wrapper">
+                <button id="generate-button">Generate!</button>
+            </a>
         </div>
     </body>
+    <script>
+        let restrictions = [];
+        const generateButton = document.getElementById("generate-button");
+
+        generateButton.addEventListener("click", async () => {
+            let toggledAnswer = "";
+            let onlyTypedIngredients = document.getElementById("toggle").checked;
+            if (!onlyTypedIngredients) {
+                toggledAnswer = "DON'T";
+            }
+            const response = await fetch(
+                'https://noggin.rea.gent/petite-damselfly-8818',
+                {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: 'Bearer rg_v1_6eqt84582dbwyyqyxz8og1m98uzkwjm6ov48_ngk',
+                    },
+                    body: JSON.stringify({
+                    // fill variables here.
+                    "cuisine": document.getElementById("cuisine-type").value,
+                    "pantry": localStorage.getItem("item-storage"),
+                    "people": document.getElementById("serving-size").value,
+                    "time": document.getElementById("time-limit").value,
+                    "other": document.getElementById("other-concerns").value,
+                    "restrictions": restrictions,
+                    "Dont": toggledAnswer,
+                    }),
+                }
+            ).then(response => response.text());
+            
+            //const parsedStr = JSON.parse('[' + response + ']');
+            localStorage.setItem("recipes", response);
+            //document.location.href = "six-recipes.html";
+        });
+
+        document.getElementById('dietary-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const dietaryInput = document.getElementById('dietary-input');
+            const dietaryValue = dietaryInput.value.trim();
+            
+            if (dietaryValue !== '') {
+                addDietaryRestriction(dietaryValue);
+                dietaryInput.value = '';
+            }
+        });
+
+        function addDietaryRestriction(value) {
+            const dietaryList = document.getElementById('dietary-list');
+            
+            const dietaryItem = document.createElement('div');
+            dietaryItem.className = 'dietary-item';
+            
+            const dietaryText = document.createElement('span');
+            dietaryText.textContent = value;
+            restrictions.push(dietaryText.textContent);
+            
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'X';
+            deleteButton.onclick = function() {
+                dietaryList.removeChild(dietaryItem);
+                const index = restrictions.indexOf(dietaryText.textContent);
+                restrictions.splice(index, 1);
+                console.log(restrictions);
+            };
+            
+            dietaryItem.appendChild(dietaryText);
+            dietaryItem.appendChild(deleteButton);
+            dietaryList.appendChild(dietaryItem);
+        }
+    </script>
 </html>

@@ -1,18 +1,332 @@
 .option {
-    width: 312px;
-    height: 100px;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 1325px;
+  height: 100px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;            /* Added */
+  justify-content: center;  /* Added */
+  align-items: center;      /* Added */
+}
+
+.dietary-restrictions {
+  width: 1285px;
+  height: auto;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dietary-restrictions form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dietary-restrictions input[type="text"] {
+  width: 300px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.dietary-restrictions input[type="submit"] {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.dietary-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start; /* Align items to the start (left) */
+}
+
+.dietary-item {
+  background-color: #fff;
+  color: #28a745;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(20% - 10px); /* Take up a fifth of the width with some margin */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.dietary-item button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cuisine {
+  width: 1285px;
+  height: 100px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px;  
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;   
+  justify-content: space-between;
+  align-items: center;   
+  padding: 0 20px;
+}
+
+.cuisine p {
+  margin: 0; 
+}
+
+.cuisine form {
+  display: flex;
+  align-items: center;
+}
+
+.virtual-pantry {
+  width: 1285px;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   
-    background-color: #28a745;
-    color: white;
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.virtual-pantry span {
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.serving-size {
+  width: 1285px;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   
-    border: none;
-    border-radius: 15px;
-    font-size: 25px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, transform 0.3s; 
-  }
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.serving-size span {
+  margin: 0;
+}
+
+.serving-size select {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #28a745;
+  cursor: pointer;
+}
+
+.time-limit {
+  width: 1285px;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;  
+}
+
+.time-limit span {
+  margin: 0;
+}
+
+.time-limit input[type="number"] {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #28a745;
+  width: 100px;
+  text-align: right;
+}
+
+.other-concerns {
+  width: 1285px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+  font-size: 25px; 
+  transition: background-color 0.3s, transform 0.3s; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.other-concerns span {
+  margin: 0;
+}
+
+.other-concerns textarea {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #28a745;
+  width: 800px; /* Adjust width as necessary */
+  height: 60px; /* Adjust height as necessary */
+}
+
+.generate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.generate-button:hover {
+    background-color: #0056b3;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Makes the container full-height of the viewport */
+  background-color: #f0f0f0; 
+}
