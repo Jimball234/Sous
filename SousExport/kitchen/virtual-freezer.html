@@ -143,16 +143,42 @@
     const compiledTemplate = Handlebars.compile(" <div class='item' id='{{item_name}}'> " +
         "<button style='cursor: pointer; border: none; outline: none; background: none; font-size: 1.25rem; font-weight: bold;' class=\"remove-button\">&times</button>" +
         "<strong> item:</strong> {{item_name}} |" +
-        "<strong> count:</strong> {{item_count}} |" +
+        "<strong> count:</strong> <span class='num-count'>{{item_count}}</span><br>" +
         "<strong> exp:</strong> {{item_exp}}<br>" +
         "<img src='{{item_image}}' alt='{{item_name}} image' style='width:100px;height:100px;'>" +
+        "\n" +
+        "<br>"+
+        "<div style='color: #578db9;text-decoration: underline' class='openPopup'>edit count</div>" +
+        "\n" +
+        "  <div class=\"popup\" class=\"popup\">\n" +
+        " <div style='float: left' class='times-embeded'>&times </div>" +
+        "    <div class=\"popup-content\">\n" +
+        "      <strong>Change Count to:</strong>\n" +
+        "      <input class='input-count'>\n" +
+        "      <button class=\"closePopup\">Close / enter</button> \n" +
+        "\n" +
+        "    </div>\n" +
+        "  </div> " +
         "</div>");
 
     const compiledTemplate2 = Handlebars.compile(" <div class='item' id='{{item_name}}'> " +
         "<button style='cursor: pointer; border: none; outline: none; background: none; font-size: 1.25rem; font-weight: bold;' class=\"remove-button\">&times</button>" +
         "<strong> item:</strong> {{item_name}} |" +
-        "<strong> count:</strong> {{item_count}}<br>" +
+        "<strong> count:</strong> <span class='num-count'>{{item_count}}</span><br>" +
         "<img src='{{item_image}}' alt='{{item_name}} image' style='width:100px;height:100px;'>" +
+        "\n" +
+        "<br>"+
+        "<div style='color: #578db9;text-decoration: underline' class='openPopup'>edit count</div>" +
+        "\n" +
+        "  <div class=\"popup\" class=\"popup\">\n" +
+        " <div style='float: left' class='times-embeded'>&times </div>" +
+        "    <div class=\"popup-content\">\n" +
+        "      <strong>Change Count to:</strong>\n" +
+        "      <input class='input-count'>\n" +
+        "      <button class=\"closePopup\">Close / enter</button> \n" +
+        "\n" +
+        "    </div>\n" +
+        "  </div> " +
         "</div>");
 
     const variables = {
@@ -164,7 +190,6 @@
 
     window.onload = () => {
         document.getElementById("blue-square").innerHTML = localStorage.getItem("freezer-storage");
-        document.getElementById("brown-square").innerHTML = localStorage.getItem("pantry-storage");
     }
 
     document.getElementById("modal-add-button").addEventListener("click", async () => {
@@ -179,19 +204,21 @@
         const item_count = document.getElementById("input-count").value;
         document.getElementById("input-count").value = "";
 
-        const item_image = await getAIImageURL(item_name); // Await the AI image URL
+        // const item_image = await getAIImageURL(item_name); // Await the AI image URL
 
         const box = document.getElementById("blue-square");
         variables.item_name = item_name;
         variables.item_exp = item_exp;
         variables.item_count = item_count;
-        variables.item_image = item_image; // Corrected to item_image
+        // variables.item_image = item_image; // Corrected to item_image
 
         if (item_exp !== "") {
             box.innerHTML += compiledTemplate(variables);
         } else {
             box.innerHTML += compiledTemplate2(variables);
         }
+
+        console.log(1323)
 
         if(localStorage.getItem("item-storage") === null) {
             localStorage.setItem("item-storage", item_name);
@@ -211,10 +238,87 @@
             localStorage.setItem("freezer-storage", document.getElementById("blue-square").innerHTML);
         }
     });
+    box.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target.classList.contains("openPopup")  ) { // Assuming a class for the remove button
+            const divy = target.closest(".item").querySelectorAll(".popup"); // Assuming a class for the item container
+            divy[0].style.display = 'block';
+        } else if(target.id === "closePopup") {
+            // Assuming a class for the item container
+            target.closest(".popup").style.display = 'none';
+        }
+    });
+
+    box.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target.className === "closePopup") {
+            const s = target.closest(".popup").querySelector(".input-count");
+            target.closest(".item").querySelector(".num-count").innerText = s.value;
+            target.closest(".popup").style.display = "none";
+            localStorage.setItem("freezer-storage", document.getElementById("blue-square").innerHTML);
+        }
+    });
+
+    box.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target.className === "times-embeded") {
+            target.closest(".popup").style.display = 'none';
+        }
+    });
+
 </script>
 
 
 <style>
+    .times-embeded:hover {
+        cursor: pointer;
+    }
+
+    .num-count {
+
+    }
+
+    #input-count {
+
+    }
+
+    .closePopup {
+        background-color: #558558;
+        border: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .closePopup:hover {
+        cursor: pointer;
+    }
+
+    .openPopup {
+
+    }
+
+    .openPopup:hover {
+        cursor: pointer;
+    }
+
+    .popup {
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #91969c;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .popup-content {
+        text-align: center;
+    }
+
     .item {
         border-radius: 5px;
         text-align: center;
