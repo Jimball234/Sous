@@ -28,55 +28,100 @@
                     <div class="user-actions">
                         <a href="account.html"><img src="user-icon.png" alt="User"></a>
                         <a href="favorites.html"><img src="heart-icon.png" alt="Favorites"></a>
-                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div class="title"><h1>Steps:</h1></div>
-                <div class="container">
-                    <main>
-                        <div class="instructions">
-                            <div class="step">
-                                <h2>STEP 1 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-
-                            </div>
-                            <div class="step">
-                                <h2>STEP 2 of 9: </h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="step">
-                                <h2>STEP 3 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="step">
-                                <h2>STEP 4 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="step">
-                                <h2>STEP 5 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="step">
-                                <h2>STEP 6 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="step">
-                                <h2>STEP 7 of 9:</h2>
-                                <div class="instruction-text">Add the cooked pasta to the prepared sauce and serve.</div>
-                            </div>
-                            <div class="query">
-                                <input type="text" placeholder="Type your questions here...">
-                                <button><img src="mic.png" alt="Microphone"></button>
-                            </div>
-                            <button class="see-steps-button">See Step-By-Step</button>
-                        </div>
-                    </main>
+        <div class="container">
+            <main>
+                <div class="instructions" id="instructions">
+                    <!-- Steps will be dynamically inserted here -->
                 </div>
-                <script src="scripts.js"></script>
-            </body>
-            </html>
-            
-        </main>
+                <br>
+                <div class="query">
+                    <input type="text" placeholder="Type your questions here..." id="query-input">
+                    <button id="mic-button"><img src="mic.png" alt="Microphone"></button>
+                </div>
+                <button class="generate-button">Generate</button>
+            </main>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+    <script>
+        // Sample JSON data
+        const recipeData = {
+            name: "HotDogSalad",
+            desc: "A refreshing salad with pieces of hot dog.",
+            estTime: "15",
+            servingSize: "1",
+            steps: "1. Chop the hot dog into small pieces and heat until warm. 2. In a bowl, mix together lettuce, tomatoes, cucumbers, and onions. 3. Add the warm hot dog pieces. 4. Drizzle mustard as the dressing. 5. Toss well and serve immediately."
+        };
+
+        // Function to parse and display steps
+        function displaySteps(recipe) {
+            const stepsContainer = document.getElementById('instructions');
+            const steps = recipe.steps.split(/(?:\d\.\s)/).filter(step => step.trim().length > 0); // Split steps string into individual steps and filter out empty strings
+            steps.forEach((step, index) => {
+                // Create step div
+                const stepDiv = document.createElement('div');
+                stepDiv.classList.add('step');
+
+                // Create step title
+                const stepTitle = document.createElement('h2');
+                stepTitle.textContent = `STEP ${index + 1} of ${steps.length}:`;
+
+                // Create step instruction text
+                const instructionText = document.createElement('div');
+                instructionText.classList.add('instruction-text');
+                instructionText.textContent = step.trim();
+
+                // Append title and instruction text to step div
+                stepDiv.appendChild(stepTitle);
+                stepDiv.appendChild(instructionText);
+
+                // Append step div to steps container
+                stepsContainer.appendChild(stepDiv);
+            });
+        }
+
+        // Call function to display steps on page load
+        displaySteps(recipeData);
+
+        // Check if the browser supports the Web Speech API
+        if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = 'en-US';
+
+            const micButton = document.getElementById('mic-button');
+            const queryInput = document.getElementById('query-input');
+
+            micButton.addEventListener('click', () => {
+                recognition.start();
+            });
+
+            recognition.onstart = () => {
+                console.log('Speech recognition started');
+            };
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                queryInput.value = transcript;
+                console.log('Speech recognized:', transcript);
+            };
+
+            recognition.onerror = (event) => {
+                console.error('Speech recognition error:', event.error);
+            };
+
+            recognition.onend = () => {
+                console.log('Speech recognition ended');
+            };
+        } else {
+            console.log('Speech recognition not supported in this browser.');
+        }
+    </script>
 </body>
 </html>
