@@ -5,28 +5,38 @@ body {
     padding: 0;
 }
 
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+} 
 .container {
     margin: 0 auto;
 }
 
 .taskbar {
-    background-color: #32B902;
+    background-color: rgba(50,185,2, .63);
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    height: 90px;
+
 }
 
 .taskbar .left {
     display: flex;
+    font-size: 35px;
 }
 
 .taskbar .right {
+    padding-top: 20px;
     display: flex;
 }
 
 .taskbar button {
-    background-color: #32B902;
+    background-color: rgba(50,185,2, 0);
+
     border: none;
     color: white;
     padding: 14px 20px;
@@ -39,9 +49,8 @@ body {
 }
 
 .taskbar button:hover {
-    background-color: #40893A;
+    background-color: rgba(50,185,2);
 }
-
 img {
     border-radius: 4px;
     padding: 5px;
