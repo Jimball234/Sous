@@ -46,78 +46,102 @@
                         <p class="time" id="time-1">60 mins</p>
                         <p id="desc-1">A dish involving layering sheets of pasta together with meat and bechamel.</p>
                     </div>
-                    <a href="all-steps.html">
-                    <button>></button>
+                    <a href="all-steps.html" id="button-1">
+                        <button>></button>
                     </a>
                     <p class="servings" id="servings-1">4 people</p>
                 </div>
                 <div class="card">
-                    <h3>Macaroni & Cheese</h3>
+                    <h3 id="title-2">Macaroni & Cheese</h3>
                     <div class="inner-card">
-                        <p class="time">25 mins</p>
-                        <p>A dish involving pasta with cheese sauce.</p>
+                        <p class="time" id="time-2">25 mins</p>
+                        <p id="desc-2">A dish involving pasta with cheese sauce.</p>
                     </div>
-                    <a href="all-steps.html">
+                    <a href="all-steps.html" id="button-2">
                         <button>></button>
-                        </a>
-                    <p class="servings">4 people</p>
+                    </a>
+                    <p class="servings" id="servings-2">4 people</p>
                 </div>
                 <div class="card">
-                    <h3>Cacio e Pepe</h3>
+                    <h3 id="title-3">Cacio e Pepe</h3>
                     <div class="inner-card">
-                        <p class="time">20 mins</p>
-                        <p>A simple yet elegant dish with eggs, cheese, and pasta.</p>
+                        <p class="time" id="time-3">20 mins</p>
+                        <p id="desc-3">A simple yet elegant dish with eggs, cheese, and pasta.</p>
                     </div> 
-                    <a href="all-steps.html">
+                    <a href="all-steps.html" id="button-3">
                         <button>></button>
-                        </a>
-                    <p class="servings">4 people</p>
+                    </a>
+                    <p class="servings" id="servings-3">4 people</p>
                 </div>
                 <div class="card">
-                    <h3>Tortilla Pizza</h3>
+                    <h3 id="title-4">Tortilla Pizza</h3>
                     <div class="inner-card">
-                        <p class="time">10 mins</p>
-                        <p>An easy version of pizza, replacing the dough with tortilla!</p>
+                        <p class="time" id="time-4">10 mins</p>
+                        <p id="desc-4">An easy version of pizza, replacing the dough with tortilla!</p>
                     </div> 
-                    <a href="all-steps.html">
+                    <a href="all-steps.html" id="button-4">
                         <button>></button>
-                        </a>
-                    <p class="servings">4 people</p>
+                    </a>
+                    <p class="servings" id="servings-4">4 people</p>
                 </div>
                 <div class="card">
-                    <h3>Spaghetti & Meatballs</h3>
+                    <h3 id="title-5">Spaghetti & Meatballs</h3>
                     <div class="inner-card">
-                        <p class="time">40 mins</p>
-                        <p>A comfort pasta dish with homemade meatballs and pasta sauce.</p>
+                        <p class="time" id="time-5">40 mins</p>
+                        <p id="desc-5">A comfort pasta dish with homemade meatballs and pasta sauce.</p>
                     </div>
-                    <a href="all-steps.html">
+                    <a href="all-steps.html" id="button-5">
                         <button>></button>
-                        </a>
-                    <p class="servings">4 people</p>
+                    </a>
+                    <p class="servings" id="servings-5">4 people</p>
                 </div>
                 <div class="card">
-                    <h3>Carbonara</h3>
+                    <h3 id="title-6">Carbonara</h3>
                     <div class="inner-card">
-                        <p class="time">20 mins</p>
-                        <p>A simple yet elegant dish with eggs, pasta, and pancetta.</p>
+                        <p class="time" id="time-6">20 mins</p>
+                        <p id="desc-6">A simple yet elegant dish with eggs, pasta, and pancetta.</p>
                     </div> 
-                    <a href="all-steps.html">
+                    <a href="all-steps.html" id="button-6">
                         <button>></button>
-                        </a>
-                    <p class="servings">4 people</p>
+                    </a>
+                    <p class="servings" id="servings-6">4 people</p>
                 </div>
             </div>
         </main>
     </div>
-    <script src="scripts.js"></script>
     <script>
         window.onload = (event) => {
             let recipes = localStorage.getItem("recipes");
 
             for (let i = 1; i < 7; i++) {
-                document.getElementById("title-" + i).value = recipes[i - 1]
+                const jsonObj = JSON.parse(localStorage.getItem("recipe-" + i));
+                document.getElementById("title-" + i).innerText = jsonObj["name"];
+                document.getElementById("time-" + i).innerText = jsonObj["est-time"] + " min";
+                document.getElementById("desc-" + i).innerText = jsonObj["desc"];
+                document.getElementById("servings-" + i).innerText = jsonObj["serving-size"] + " people";
+
+                console.log("updated recipe " + i);
             }
         };
+
+        document.getElementById("button-1").addEventListener("click", () => {
+            localStorage.setItem("chosen", "1");
+        });
+        document.getElementById("button-2").addEventListener("click", () => {
+            localStorage.setItem("chosen", "2");
+        });
+        document.getElementById("button-3").addEventListener("click", () => {
+            localStorage.setItem("chosen", "3");
+        });
+        document.getElementById("button-4").addEventListener("click", () => {
+            localStorage.setItem("chosen", "4");
+        });
+        document.getElementById("button-5").addEventListener("click", () => {
+            localStorage.setItem("chosen", "5");
+        });
+        document.getElementById("button-6").addEventListener("click", () => {
+            localStorage.setItem("chosen", "6");
+        });
     </script>
 </body>
 </html>

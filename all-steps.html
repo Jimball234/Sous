@@ -32,6 +32,9 @@
                 </div>
             </div>
         </header>
+        <a href="six-recipes.html">
+            <button>&Backslash;</button>
+        </a>
         <div class="title"><h1>Steps:</h1></div>
         <div class="container">
             <main>
@@ -49,12 +52,15 @@
     </div>
     <script>
         // Sample JSON data
+        const recipeStr = localStorage.getItem("recipe-" + localStorage.getItem("chosen"));
+        const JSONrecipe = JSON.parse(recipeStr);
         const recipeData = {
-            name: "HotDogSalad",
-            desc: "A refreshing salad with pieces of hot dog.",
-            estTime: "15",
-            servingSize: "1",
-            steps: "1. Chop the hot dog into small pieces and heat until warm. 2. In a bowl, mix together lettuce, tomatoes, cucumbers, and onions. 3. Add the warm hot dog pieces. 4. Drizzle mustard as the dressing. 5. Toss well and serve immediately."
+            name: JSONrecipe["name"],
+            desc: JSONrecipe["desc"],
+            estTime: JSONrecipe["est-time"],
+            servingSize: JSONrecipe["serving-size"],
+            steps: JSONrecipe["steps"],
+            //steps: "1. Chop the hot dog into small pieces and heat until warm. 2. In a bowl, mix together lettuce, tomatoes, cucumbers, and onions. 3. Add the warm hot dog pieces. 4. Drizzle mustard as the dressing. 5. Toss well and serve immediately."
         };
 
         localStorage.setItem('steps', recipeData.steps);
@@ -88,7 +94,10 @@
         }
 
         // Call function to display steps on page load
-        displaySteps(recipeData);
+        window.onload = (event) => {
+            displaySteps(recipeData);
+        };
+        
 
         // Check if the browser supports the Web Speech API
         if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {

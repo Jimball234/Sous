@@ -115,10 +115,28 @@
                     }),
                 }
             ).then(response => response.text());
+            console.log(response);
+
+            let startBracketIndex = 0;
+            let endBracketIndex = response.length - 1;
             
-            //const parsedStr = JSON.parse('[' + response + ']');
-            localStorage.setItem("recipes", response);
-            //document.location.href = "six-recipes.html";
+            while (response[startBracketIndex] != '[') {
+                startBracketIndex += 1;
+            }
+            while (response[endBracketIndex] != ']') {
+                endBracketIndex -= 1;
+            }
+
+            console.log(response.substring(startBracketIndex, endBracketIndex + 1));
+            const parsedStr = JSON.parse(response.substring(startBracketIndex, endBracketIndex + 1));
+            console.log(parsedStr);
+            localStorage.setItem("recipe-1", JSON.stringify(parsedStr[0]));
+            localStorage.setItem("recipe-2", JSON.stringify(parsedStr[1]));
+            localStorage.setItem("recipe-3", JSON.stringify(parsedStr[2]));
+            localStorage.setItem("recipe-4", JSON.stringify(parsedStr[3]));
+            localStorage.setItem("recipe-5", JSON.stringify(parsedStr[4]));
+            localStorage.setItem("recipe-6", JSON.stringify(parsedStr[5]));
+            document.location.href = "six-recipes.html";
         });
 
         document.getElementById('dietary-form').addEventListener('submit', function(e) {
