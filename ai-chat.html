@@ -67,9 +67,6 @@
             const userQuery = localStorage.getItem('query-input');
             console.log(steps, userQuery);
 
-            // Clear localStorage
-            localStorage.clear();
-
             // Fetch data from API
             try {
                 const response = await fetch(
