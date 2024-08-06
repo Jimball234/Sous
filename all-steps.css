@@ -152,3 +152,12 @@ img {
     font-size: 1em;
     margin-bottom: 10px;
 }
+
+.return-button {
+    background-color: #4d89f5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
