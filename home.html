@@ -32,6 +32,9 @@
             </div>
 </header>
 <div>
+    <div  class="format">
+    <img  style="width: 1200px; height: 225px; display: table;" src="steps-stuff-upscaled.png" alt="steps">
+    </div>
 <div class="Imgcontainer">
     <div class="logoimg">
         <img src="Logo_upscaled.png" alt="Logo">
@@ -53,14 +56,21 @@
         font-weight: bold;
     }
 
+    .format {
+        z-index: 1;
+        content: "";
+        clear: both;
+        display: table;
+        padding-left: 120px;
+    }
+
     .Imgcontainer{
+        z-index: 2;
         display: flex;
         justify-content: left;
-        margin-top: 100px;
         height: 100%; /* Adjust as needed */
         padding-left: 150px;
-        padding-top: 60px;
-    }  
+    }
 
     .logoimg img {
         height: 400px;
