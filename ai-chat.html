@@ -36,6 +36,8 @@
                     <!-- Steps will be dynamically inserted here -->
                 </div>
                 <br>
+                <div id="loading-signifier" class="loading-signifier" style="display: none;">Loading...</div>
+                <br><br>
                 <a href="all-steps.html">
                     <button class="back-button">Return to Recipe</button>
                 </a>
@@ -90,7 +92,17 @@
                 console.error('Error fetching data:', error);
             }
         });
+    </script>
+    <script>
+        window.onload = (event) => {
+            const loadingSignifier = document.getElementById('loading-signifier');
+            loadingSignifier.style.display = 'inline-block';
 
+            // Simulate the loading time (replace with actual recipe generation logic)
+            setTimeout(function() {
+                loadingSignifier.style.display = 'none';
+            }, 3500); // Simulating 5 seconds loading time
+        };
     </script>
 </body>
 </html>
