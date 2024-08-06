@@ -7,7 +7,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 
-  background-color: #28a745;
+  background-color: rgb(139, 203, 67);
   color: white;
 
   border: none;
@@ -29,7 +29,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 
-  background-color: #28a745;
+  background-color: rgba(204, 233, 174);
   color: white;
 
   border: none;
@@ -76,7 +76,7 @@
 
 .dietary-item {
   background-color: #fff;
-  color: #28a745;
+  background-color: rgb(174, 213, 125);
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
@@ -96,6 +96,10 @@
   padding: 5px 10px;
 }
 
+#cuisine-type {
+  background-color: white;
+}
+
 .cuisine {
   width: 1285px;
   height: 100px;
@@ -105,8 +109,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
 
-  background-color: #28a745;
-  color: white;
+  background-color: rgba(204, 233, 174);
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
 
   border: none;
   border-radius: 15px;
@@ -134,8 +139,9 @@
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: white;
-  color: #28a745;
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
+  background-color: rgba(204, 233, 174);
   width: 400px; /* Adjust width as necessary */
   margin-right: 10px;
 }
@@ -147,9 +153,10 @@
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  
-  background-color: #28a745;
-  color: white;
+
+  background-color: rgba(204, 233, 174);
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
 
   border: none;
   border-radius: 15px;
@@ -218,9 +225,10 @@ input:checked + .slider:before {
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  
-  background-color: #28a745;
-  color: white;
+
+  background-color: rgba(204, 233, 174);
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
 
   border: none;
   border-radius: 15px;
@@ -243,7 +251,8 @@ input:checked + .slider:before {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: white;
-  color: #000000;
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -254,9 +263,10 @@ input:checked + .slider:before {
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  
-  background-color: #28a745;
-  color: white;
+
+  background-color: rgba(204, 233, 174);
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
 
   border: none;
   border-radius: 15px;
@@ -291,9 +301,10 @@ input:checked + .slider:before {
   margin-right: 50px;
   margin-top: 20px; /* Add margin on top */
   margin-bottom: 20px; /* Add margin on bottom */
-  
-  background-color: #28a745;
-  color: white;
+
+  background-color: rgba(204, 233, 174);
+  color: rgba(51, 51, 51, .85);
+  font-weight: bold;
 
   border: none;
   border-radius: 15px;
@@ -328,8 +339,8 @@ input:checked + .slider:before {
 }
 
 #generate-button {
-  background-color: #28a745; /* Match the green theme */
-  color: white;
+  background-color: rgba(204, 233, 174, 1);
+  color: black;
   border: none;
   border-radius: 15px;
   font-size: 23px;
