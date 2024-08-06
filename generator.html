@@ -32,10 +32,10 @@
     </header>
     <body>
         <div class="container">
-            <p>Filters:</p>
+            <p style="margin-left: 20px; font-size: 20px;"><strong>Filters:</strong></p>
             <div id="dietary-restrictions" class="dietary-restrictions">
                 <form id="dietary-form">
-                    <input type="text" id="dietary-input" placeholder="Enter dietary restriction">
+                    <input type="text" id="dietary-input" placeholder="Enter dietary restriction...">
                     <input type="submit" value="Add">
                 </form>
                 <div id="dietary-list" class="dietary-list"></div>
@@ -43,8 +43,7 @@
             <div class="cuisine">
                 <p>Cuisine Type</p>
                 <form action="" class="right">
-                    <input type="text" id="cuisine-type" name="cuisine-type">
-                    <input type="submit" value="Submit" style="cursor: pointer">
+                    <input type="text" id="cuisine-type" name="cuisine-type" placeholder="Enter cuisine...">
                 </form>
             </div>
             <div class="virtual-pantry">
@@ -77,9 +76,10 @@
                 <span>Other concerns? Looking for something?</span>
                 <textarea id="other-concerns" name="other-concerns" placeholder="Type your concerns here..."></textarea>
             </div>
-            <a id="button-wrapper">
-                <button id="generate-button">Generate!</button>
-            </a>
+            <div class="generate-button-container" id="button-wrapper">
+                <button id="generate-button">Generate Recipes</button>
+                <div id="loading-signifier" class="loading-signifier" style="display: none;">Loading...</div>
+            </div>
         </div>
     </body>
     <script>
@@ -156,6 +156,7 @@
             
             const dietaryText = document.createElement('span');
             dietaryText.textContent = value;
+            dietaryText.style.fontSize = "18px";
             restrictions.push(dietaryText.textContent);
             
             const deleteButton = document.createElement('button');
@@ -171,5 +172,16 @@
             dietaryItem.appendChild(deleteButton);
             dietaryList.appendChild(dietaryItem);
         }
+    </script>
+    <script>
+        document.getElementById('generate-button').addEventListener('click', function() {
+        const loadingSignifier = document.getElementById('loading-signifier');
+        loadingSignifier.style.display = 'inline-block';
+
+        // Simulate the loading time (replace with actual recipe generation logic)
+        setTimeout(function() {
+            loadingSignifier.style.display = 'none';
+        }, 25000); // Simulating 15 seconds loading time
+    });
     </script>
 </html>
