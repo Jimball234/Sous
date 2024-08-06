@@ -112,7 +112,7 @@
                     }),
                 }
             ).then(response => response.text());
-            console.log(response);
+            console.log("Response: " + response);
 
             let startBracketIndex = 0;
             let endBracketIndex = response.length - 1;
@@ -126,7 +126,8 @@
 
             console.log(response.substring(startBracketIndex, endBracketIndex + 1));
             const parsedStr = JSON.parse(response.substring(startBracketIndex, endBracketIndex + 1));
-            console.log(parsedStr);
+            console.log("Parsed: " + parsedStr);
+
             localStorage.setItem("recipe-1", JSON.stringify(parsedStr[0]));
             localStorage.setItem("recipe-2", JSON.stringify(parsedStr[1]));
             localStorage.setItem("recipe-3", JSON.stringify(parsedStr[2]));
@@ -149,6 +150,7 @@
         });
 
         function addDietaryRestriction(value) {
+
             const dietaryList = document.getElementById('dietary-list');
             
             const dietaryItem = document.createElement('div');
@@ -161,27 +163,69 @@
             
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'X';
+
+            let i = 1;
+            while (localStorage.getItem("restriction-" + i) != null) {
+                i += 1;
+            }
+            localStorage.setItem("restriction-" + i, dietaryText.textContent);
+            let strName = "restriction-" + i;
+
             deleteButton.onclick = function() {
                 dietaryList.removeChild(dietaryItem);
                 const index = restrictions.indexOf(dietaryText.textContent);
                 restrictions.splice(index, 1);
                 console.log(restrictions);
+                localStorage.removeItem(strName);
             };
             
             dietaryItem.appendChild(dietaryText);
             dietaryItem.appendChild(deleteButton);
             dietaryList.appendChild(dietaryItem);
+            
+            
         }
     </script>
     <script>
         document.getElementById('generate-button').addEventListener('click', function() {
-        const loadingSignifier = document.getElementById('loading-signifier');
-        loadingSignifier.style.display = 'inline-block';
+            const loadingSignifier = document.getElementById('loading-signifier');
+            loadingSignifier.style.display = 'inline-block';
 
-        // Simulate the loading time (replace with actual recipe generation logic)
-        setTimeout(function() {
-            loadingSignifier.style.display = 'none';
-        }, 25000); // Simulating 15 seconds loading time
-    });
+            // Simulate the loading time (replace with actual recipe generation logic)
+            setTimeout(function() {
+                loadingSignifier.style.display = 'none';
+            }, 25000); // Simulating 15 seconds loading time
+        });
+
+        window.onload = (event) => {
+            const dietaryList = document.getElementById('dietary-list');
+            for (let i = 1; i < 10; i++) {
+                if (localStorage.getItem("restriction-" + i) != null) {
+                    const dietaryItem = document.createElement('div');
+                    dietaryItem.className = 'dietary-item';
+                    
+                    const dietaryText = document.createElement('span');
+                    dietaryText.textContent = localStorage.getItem("restriction-" + i);
+                    dietaryText.style.fontSize = "18px";
+                    restrictions.push(dietaryText.textContent);
+                    
+                    const deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'X';
+                    let strName = "restriction-" + i;
+
+                    deleteButton.onclick = function() {
+                        dietaryList.removeChild(dietaryItem);
+                        const index = restrictions.indexOf(dietaryText.textContent);
+                        restrictions.splice(index, 1);
+                        console.log(restrictions);
+                        localStorage.removeItem(strName);
+                    };
+                
+                    dietaryItem.appendChild(dietaryText);
+                    dietaryItem.appendChild(deleteButton);
+                    dietaryList.appendChild(dietaryItem);
+                }
+            }
+        };
     </script>
 </html>
