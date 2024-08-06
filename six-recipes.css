@@ -3,7 +3,7 @@ body {
     background-color: #f8f4e3;
     margin: 0;
     padding: 0;
-
+    padding-bottom: 20px;
 }
 
 .container {
@@ -65,13 +65,20 @@ img {
 }
 
 .return-button {
-    background-color: #4d89f5;
+    background-color: #387bf8;
     color: white;
     border: none;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
+
+.return-button:hover {
+    background-color: #0450dc;
+}
+
 .body-container {
     padding-left: 20px; 
     padding-right: 20px; 
