@@ -3,45 +3,42 @@ body {
     background-color: #f8f4e3;
     margin: 0;
     padding: 0;
-}
 
-.taskbar-container {
-    margin: 0 auto;
 }
 
 .container {
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 90vh; /* Adjust this value as needed */
-    overflow-y: scroll;
-    overflow-x: visible;
 }
 
 header h1 {
     font-size: 2em;
     margin: 0;
     color: white;
-}
+} 
 
 .taskbar {
-    background-color: #32B902;
+    background-color: rgba(50,185,2, .63);
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    height: 90px;
+
 }
 
 .taskbar .left {
     display: flex;
+    font-size: 35px;
 }
 
 .taskbar .right {
+    padding-top: 20px;
     display: flex;
 }
 
 .taskbar button {
-    background-color: #32B902;
+    background-color: rgba(50,185,2, 0);
+
     border: none;
     color: white;
     padding: 14px 20px;
@@ -54,18 +51,19 @@ header h1 {
 }
 
 .taskbar button:hover {
-    background-color: #40893A;
+    background-color: rgba(50,185,2);
 }
 
 img {
     border-radius: 4px;
     padding: 5px;
     width: 40px;
-}
+  }
 
 .user-actions a {
     margin-left: 10px;
 }
+
 
 .title {
     padding: 20px;
