@@ -3,11 +3,12 @@ body {
     background-color: #f8f4e3;
     margin: 0;
     padding: 0;
-
 }
 
 .container {
     margin: 0 auto;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 header h1 {
@@ -66,7 +67,8 @@ img {
 
 
 .title {
-    padding: 20px;
+    padding: none;
+    padding-left: 10px;
 }
 
 .instructions {
@@ -140,8 +142,12 @@ img {
     margin-bottom: 10px;
 }
 
-.back-button {
-    background-color: #40893A;
+.generate-button:hover {
+    background-color: #181818;
+}
+
+.favorite-button {
+    background-color: rgba(211, 5, 5, 0.827);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -151,11 +157,22 @@ img {
     margin-bottom: 10px;
 }
 
+.favorite-button:hover {
+    background-color: rgba(147, 4, 4, 0.827);
+}
+
 .return-button {
-    background-color: #4d89f5;
+    background-color: #387bf8;
     color: white;
     border: none;
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.return-button:hover {
+    background-color: #0450dc;
 }
