@@ -63,15 +63,15 @@
                             align-items: center;">
                             <div><label for="input-count">Count</label><input id="input-count"></div>
                         </div>
-                        <p style="font-size: 18px; margin-top: 10px; padding-top: 10px;">Select Ingredient Location</p>
-                        <div class="dropdown-container">
+                        <!-- <p style="font-size: 18px; margin-top: 10px; padding-top: 10px;">Select Ingredient Location</p> -->
+                        <!-- <div class="dropdown-container">
                             <select id="dropdownMenu">
                                 <option value="" disabled selected>Select an option</option>
                                 <option value="option1">Pantry</option>
                                 <option value="option2">Freezer</option>
                                 <option value="option3">Fridge</option>
                             </select>
-                        </div>
+                        </div> -->
                         <button id = "modal-add-button"> add</button>
                     </div>
                     
@@ -214,13 +214,13 @@
         const item_count = document.getElementById("input-count").value;
         document.getElementById("input-count").value = "";
 
-        // const item_image = await getAIImageURL(item_name); // Await the AI image URL
+        const item_image = await getAIImageURL(item_name); // Await the AI image URL
 
         const box = document.getElementById("brown-square");
         variables.item_name = item_name;
         variables.item_exp = item_exp;
         variables.item_count = item_count;
-        // variables.item_image = item_image; // Corrected to item_image
+        variables.item_image = item_image; // Corrected to item_image
 
 
 
