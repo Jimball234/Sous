@@ -1,6 +1,9 @@
 Problem Statement
 
-Sous is an application that aims to allow users to add ingredients to their virtual fridge/freezer/pantry
+Our target audience is new or inexperienced cooks who wish to tackle more
+complex or novel recipes that they have not previously attempted--whether that be in the
+form of having brand-new recipes to follow or needing help on managing specific parts
+of a complicated dish. Sous is an application that aims to allow users to add ingredients to their virtual fridge/freezer/pantry
 along with the count and expiration dates for a way to track their groceries. The user can then get 
 recommended and personalized AI-generated recipes based on user-inputted specifications as well as specify on the web page
 whether they wish to use solely the items in their virtual pantry/fridge. On the recipe selection page, the user will be prompted
